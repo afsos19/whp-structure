@@ -1,0 +1,9 @@
+99684250100 | _Pré Cadastro_  | Gerente
+11699321698 | Pedro17101993   | Vendedor
+03053154986 | Awsodre#1980    | GR
+05928544693 | Gustavo19!      | GI
+
+17727663050 | 123456qweQWE  | Teste Vendedor
+23637203421 | 123456qweQWE  | Teste GL
+81705000525 | 123456qweQWE  | Teste GR
+86045731190 | 123456qweQWE  | Teste GI

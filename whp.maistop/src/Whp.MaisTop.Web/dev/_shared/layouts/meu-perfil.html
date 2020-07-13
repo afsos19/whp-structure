@@ -1,0 +1,42 @@
+<div id="meu-pefil">
+  <main>
+    <div class="container main container-meu-perfil">
+      @@include('../componentes/user-sidebar.html')
+      <section class="content-page">
+        <div class="perfil-container-etapas">
+          <div class="perfil-title">
+            @@include('../componentes/arrow-back.html')
+            <p>Meu perfil</p>
+          </div>
+          <nav class="perfil-box-etapas">
+            <div class="perfil-box-etapas-item active" data-btn-topo-etapa="1">
+              <div class="perfil-box-etapas-circulo">
+                <div class="icon-meu-perfil-etapa" data-icon-etapa="dados"></div>
+                <p class="perfil-box-etapas-nome">1 - Dados cadastrais</p>
+              </div>
+            </div>
+            <span class="separacao-etapas"></span>
+            <div class="perfil-box-etapas-item" data-btn-topo-etapa="2">
+              <div class="perfil-box-etapas-circulo">
+                <div class="icon-meu-perfil-etapa" data-icon-etapa="endereco"></div>
+                <p class="perfil-box-etapas-nome">2 - Endereço</p>
+              </div>
+            </div>
+            <span class="separacao-etapas"></span>
+            <div class="perfil-box-etapas-item" data-btn-topo-etapa="3">
+              <div class="perfil-box-etapas-circulo">
+                <div class="icon-meu-perfil-etapa" data-icon-etapa="senha"></div>
+                <p class="perfil-box-etapas-nome">3 - Trocar senha</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="wrap-fomulario">
+          @@include('../componentes/etapasPerfil/etapa-um.html')
+          @@include('../componentes/etapasPerfil/etapa-dois.html')
+          @@include('../componentes/etapasPerfil/etapa-tres.html')
+        </div>
+      </section>
+    </div>
+  </main>
+</div>

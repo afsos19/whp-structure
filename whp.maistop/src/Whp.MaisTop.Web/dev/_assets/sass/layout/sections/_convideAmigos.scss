@@ -1,0 +1,706 @@
+// ====================================================================
+// Home
+// ====================================================================
+#convide-amigos {
+  padding: 0 20px 50px 20px;
+  background: $bg-page;
+
+  @media (max-width: 1120px) {
+    padding: 80px 20px 80px 20px;
+  }
+  @media (max-width: 1023px) {
+    .user-sidebar {
+      width: 100%;
+    }
+  }
+}
+
+.container-convide-amigos {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+  }
+}
+
+.flex-container-convide-amigos {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 830px) {
+    flex-direction: column;
+  }
+}
+
+// Convide Amigos #####################################################################################################################
+.convide-amigos {
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 20px 60px;
+  width: 100%;
+  background: #fff;
+
+  @media (max-width: 1400px) {
+    padding: 30px;
+  }
+
+  @media (max-width: 830px) {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 0 60px 25px;
+  }
+}
+
+[data-convide-amigos] {
+  position: relative;
+  display: none;
+
+  &.active {
+    display: block;
+    animation: entradaDireita 0.3s forwards;
+  }
+}
+
+[data-convide-amigos='progresso'] {
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-right: 20px;
+
+  .arrow-back {
+    display: block;
+    margin-bottom: 30px;
+
+    @media (max-width: 1400px) {
+      padding-left: 25px;
+    }
+  }
+}
+
+.convide-amigos-title {
+  padding-top: 35px;
+
+  @media (max-width: 830px) {
+    padding: 35px 10px 0 10px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 35px 25px 0 0;
+  }
+}
+
+.convide-amigos-title-principal,
+.convide-amigos-title-sub {
+  width: 100%;
+}
+
+.convide-amigos-title-principal h2 {
+  margin-bottom: 10px;
+  color: $laranja;
+  font-weight: 700;
+
+  @include font-size(34);
+
+  @media (max-width: 1400px) {
+    @include font-size(24);
+  }
+}
+
+.convide-amigos-title-sub {
+  margin-bottom: 30px;
+  max-width: 500px;
+  width: 100%;
+
+  &.convide-amigos-enviar-codigo,
+  &.convide-amigos-progresso {
+    max-width: none;
+  }
+
+  &.convide-amigos-progresso {
+    p {
+      line-height: 1.4em;
+
+      @include font-size(16);
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  p {
+    color: $text-escuro;
+    font-weight: 500;
+    line-height: 1.2em;
+
+    @include font-size(20);
+
+    @media (max-width: 1400px) {
+      width: 100%;
+
+      @include font-size(16);
+    }
+  }
+}
+
+.convide-amigos-menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.convide-amigos-menu-btn {
+  position: relative;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  max-width: 200px;
+  width: 100%;
+  height: 55px;
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
+  box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.1), 1px 2px 7px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &:hover {
+    top: -5px;
+  }
+
+  p {
+    color: #575656;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    @include font-size(14);
+
+    @media (max-width: 767px) {
+      @include font-size(11);
+    }
+  }
+
+  img {
+    margin-right: 5px;
+  }
+}
+
+.convide-amigos-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: 1024px) and (max-width: 1300px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.convide-amigos-info-item {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  width: calc(50% - 10px);
+  height: auto;
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
+
+  @media (min-width: 1024px) and (max-width: 1300px) {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  &.convide-amigos-instrucao {
+    .convide-amigos-info-item-principal {
+      p {
+        color: #afafaf;
+        line-height: 1.2em;
+
+        @media (max-width: 767px) {
+          line-height: 1.3em;
+
+          @include font-size(14);
+        }
+      }
+    }
+
+    .convide-amigos-info-item-secundario {
+      background: $gradiente-planilhas-btns-funcionarios;
+
+      p {
+        line-height: 1.2em;
+
+        @media (max-width: 767px) {
+          line-height: 1.3em;
+
+          @include font-size(14);
+        }
+      }
+    }
+  }
+
+  &.convide-amigos-celular {
+    .convide-amigos-info-item-principal {
+      p {
+        margin-bottom: 10px;
+        color: #707070;
+        text-align: center;
+      }
+
+      input {
+        margin-bottom: 15px;
+        max-width: 220px;
+        width: 100%;
+        height: 30px;
+        outline: none;
+        border: 1px solid #cacaca;
+        border-radius: 8px;
+        box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.1);
+        color: #8b8b8b;
+        text-align: center;
+
+        @include font-size(14);
+      }
+    }
+
+    .convide-amigos-info-item-secundario {
+      background: $gradiente-planilhas-btns-vendas;
+
+      p {
+        margin-bottom: 5px;
+      }
+
+      span {
+        color: #575656;
+        letter-spacing: -0.5px;
+
+        @include font-size(35);
+
+        @media (max-width: 767px) {
+          @include font-size(25);
+        }
+      }
+    }
+  }
+
+  .mensagem-sucesso {
+    display: none;
+
+    p {
+      line-height: 1.5;
+
+      span {
+        font-weight: bold;
+      }
+
+      @media (max-width: 680px) {
+        br {
+          display: none;
+        }
+      }
+    }
+
+    &.disabled {
+      .tempo-link {
+
+        .link,
+        #timer {
+          color: rgba(0, 0, 0, 0.4);
+          pointer-events: none;
+
+        }
+
+        &:hover {
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    .tempo-link {
+      position: relative;
+      width: 100%;
+
+      .link {
+        text-decoration: none;
+        color: #8cc860;
+        font-weight: bold;
+        transition: 0.3s;
+        display: inline;
+        vertical-align: middle;
+        border: 0;
+        background: transparent;
+        padding: 0;
+        cursor: pointer;
+        @include font-size(16);
+
+        &:hover {
+          color: #4f7135;
+        }
+      }
+
+      #timer {
+        float: right;
+        @include font-size(13);
+        color: #8cc860;
+        font-weight: bold;
+        vertical-align: middle;
+        position: relative;
+        top: 2px;
+        @include font-size(16);
+        margin-bottom: 0;
+      }
+
+    }
+
+    .separacao {
+      margin-top: 10px;
+      height: 1px;
+      border-top: 1px solid #9f9f9f;
+    }
+  }
+
+}
+
+.convide-amigos-info-item-principal,
+.convide-amigos-info-item-secundario {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.convide-amigos-info-item-principal {
+  flex: 1;
+}
+
+.convide-amigos-info-item-secundario {
+  min-height: 110px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.convide-amigos-copiar-codigo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 20px;
+  min-height: 120px;
+  width: 100%;
+  border: 1px solid #b7b7b7;
+  border-radius: 10px;
+
+  p {
+    color: #afafaf;
+    line-height: 1.3em;
+
+    @media (max-width: 767px) {
+      line-height: 1.4em;
+
+      @include font-size(14);
+    }
+
+    .text-bold {
+      font-weight: bold;
+    }
+  }
+}
+
+.convide-amigos-btn-copiar-codigo {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+  width: 100%;
+
+  @media (max-width: 830px) {
+    margin-bottom: 0;
+  }
+}
+
+// Progresso Amigos ##########################################################################################
+.convide-amigos-progresso-tabela {
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.convide-amigos-progresso-tabela-topo {
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 10px 15px;
+  min-width: 680px;
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #ffffff, #fafafa);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  p {
+    box-sizing: border-box;
+    padding: 0 5px;
+    color: #a59d8c;
+    font-weight: bold;
+
+    @include font-size(12);
+  }
+
+  p:not(:first-child) {
+    text-align: center;
+  }
+}
+
+.convide-amigos-progresso-itens-nome {
+  min-width: 220px;
+  width: calc(100% - 420px);
+}
+
+.convide-amigos-progresso-itens-indicacao {
+  min-width: 85px;
+  width: 85px;
+}
+
+.convide-amigos-progresso-itens-meio {
+  min-width: 125px;
+  width: 125px;
+}
+
+.convide-amigos-progresso-itens-cadastro {
+  min-width: 135px;
+  width: 135px;
+}
+
+.convide-amigos-progresso-itens-credito {
+  min-width: 80px;
+  width: 80px;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.convide-amigos-progresso-tabela-conteudo {
+  box-sizing: border-box;
+  margin-right: 5px;
+  padding-top: 20px;
+  min-width: 680px;
+  width: 100%;
+}
+
+.convide-amigos-progresso-tabela-item {
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin-right: 5px;
+  padding: 20px 15px;
+  width: 100%;
+  border-top: 1px solid #cfcfcf;
+
+  p {
+    box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 5px;
+    color: #707070;
+
+    @include font-size(11);
+  }
+
+  p:first-child {
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.3em;
+
+    span {
+      color: #a59d8c;
+      text-transform: none;
+      font-weight: 300;
+
+      &.tabela-texto-verde {
+        color: $verde-claro;
+      }
+    }
+  }
+
+  p:not(:first-child) {
+    text-align: center;
+  }
+}
+
+// Convide Amigos ##########################################################################################################
+.modal#regrasConvideAmigos {
+  max-width: 1600px;
+  width: 100%;
+  background: none;
+  box-shadow: none;
+
+  .owl-stage {
+    display: flex;
+  }
+}
+
+.regras-convide-amigos-topo {
+  margin-bottom: 20px;
+  width: 100%;
+
+  h2 {
+    color: #fff;
+    font-weight: bold;
+    @include font-size(34);
+
+    @media (max-width: 1400px) {
+      @include font-size(28);
+    }
+
+    @media (max-width: 767px) {
+      @include font-size(20);
+    }
+  }
+
+  a {
+    top: 0 !important;
+    transform: scale(1.4);
+  }
+}
+
+.regras-convide-amigos-box {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.regras-convide-amigos-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px 20px;
+  // width: calc(25% - 18px);
+  margin-right: 20px;
+  border-radius: 10px;
+  background: #fff;
+  height: 100%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: 374px) {
+    padding: 20px;
+  }
+
+  img {
+    margin: 25px 0 35px 0;
+    width: auto;
+    height: 120px;
+
+    @media (max-width: 1400px) {
+      height: 80px;
+    }
+
+    @media (max-width: 374px) {
+      margin: 10px 0 20px 0;
+      height: 60px;
+    }
+  }
+
+  h4 {
+    margin-bottom: 15px;
+    color: $laranja;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    @include font-size(19);
+
+    @media (max-width: 1400px) {
+      @include font-size(17);
+    }
+
+    @media (max-width: 374px) {
+      @include font-size(15);
+    }
+  }
+
+  p {
+    margin-bottom: 24px;
+    color: #afafaf;
+    text-align: center;
+    line-height: 1.3em;
+    font-weight: 500;
+    @include font-size(16);
+
+    @media (max-width: 1400px) {
+      @include font-size(14);
+    }
+
+    @media (max-width: 374px) {
+      @include font-size(13);
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .modal-text-verde {
+      color: $verde;
+    }
+
+    .modal-text-laranja {
+      color: $laranja;
+    }
+  }
+}
+
+.regras-convide-amigos-rodape {
+  width: 100%;
+  text-align: center;
+
+  p {
+    color: #fff;
+    font-weight: 500;
+    @include font-size(15);
+    line-height: 1.3em;
+
+    @media (max-width: 767px) {
+      @include font-size(13);
+    }
+
+    span {
+      color: $verde;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+}

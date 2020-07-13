@@ -1,0 +1,63 @@
+<div id="senha-expirada">
+  <main>
+    <div class="login-internas-container senha-expirada">
+      <div class="content-login-internas">
+        <div class="enviar-solicitacao">
+          <div class="senha-expirada-container">
+            <div class="container-logo-senha-expirada">
+              <img src="/_assets/img/logos/logo-mais-top-negativo.png" alt="Logotipo Mais Top - Brastemp Consul" />
+            </div>
+            <h2 class="senha-expirada-titulo">Sua senha Expirou!</h2>
+            <p class="senha-expirada-descricao">Por favor, digite uma nova senha<br>(Diferente da atual):</p>
+          </div>
+          <form name="form-senha-expirada" id="form-senha-expirada">
+            <input id="senha" class="input-login-internas" type="password" placeholder="Nova Senha" required />
+            <input id="confirmacao-senha" class="input-login-internas" type="password"
+              placeholder="Confirmar Nova Senha" required />
+            <p class="regra-senha-expirada">A senha deve ter pelo menos 8 caracteres, combinando letras maiúsculas,
+              letras minúsculas, caracteres especiais e números.</p>
+            <div class="btns-login-internas">
+              <button href="#!" type="submit" id="enviar btn-senha-expirada"
+                class="btn btn-laranja btn-login-internas-enviar btn-senha-expirada">Enviar</button>
+            </div>
+          </form>
+          <p class="infor-login-internas">
+            <span>Dúvidas?</span> Ligue para <a href="tel:08007800606">0800 780 0606</a><br />e fale com um de nossos
+            atendentes. </p>
+        </div>
+        <div class="mensagem-sucesso">
+          <div class="senha-expirada-container">
+            <div class="container-logo-senha-expirada">
+              <img src="/_assets/img/logos/logo-mais-top-negativo.png" alt="Logotipo Mais Top - Brastemp Consul" />
+            </div>
+            <h2 class="senha-expirada-descricao m-b-none">Digite o código que foi enviado via sms para o número <span
+                class="phone" istel></span> para ativar seu cadastro.</h2>
+            <p class="senha-expirada-subdescricao">Caso não receba o código dentro de <span>5 minutos</span>, tente
+              novamente.</p>
+          </div>
+          <form name="form-codigo" id="form-codigo" class="m-b-small">
+            <div class="sms">
+              <input type="text" class="input-login-internas" placeholder="Digite o Código*:" maxlength="6"
+                minlength="6" min="6" />
+            </div>
+            <button type="submit" class="btn btn-laranja btn-reenviar-codigo" id="enviar-sms">Enviar</button>
+          </form>
+          <div class="timer-content">
+            <div class="separacao"></div>
+            <div class="tempo-link m-b-small">
+              <button class="link">Reenviar código</button>
+              <p id="timer"></p>
+            </div>
+            <div class="separacao"></div>
+          </div>
+          <p class="infor-login-internas">
+            <span>Seus dados estão incorretos?</span> Ligue para <br /> <a href="tel:08007800606">0800 780 0606</a> e
+            fale com um de nossos atendentes. </p>
+        </div>
+      </div>
+      <div class="personagem-login-internas">
+        <div class="personagem-login-internas-img"></div>
+      </div>
+    </div>
+  </main>
+</div>

@@ -1,0 +1,112 @@
+// ====================================================================
+// Sobre
+// ====================================================================
+.container-sobre {
+  background: #fff;
+  @media (max-width: 830px) {
+    flex-direction: column;
+    &.main {
+      margin-bottom: 0;
+    }
+    .user-sidebar {
+      width: 100%;
+    }
+    .wrap-sobre {
+      background: $bg-page;
+    }
+  }
+  .user-sidebar:after {
+    display: none;
+  }
+}
+.wrap-sobre {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 50px 25px;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  @media (max-width: 830px) {
+    background: $bg-page;
+    margin-top: -50px;
+    padding: 60px 0 0 0;
+    overflow: visible;
+    &:before {
+      content: ' ';
+      width: 100vw;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: -20px;
+      display: block;
+      height: 100%;
+      background: $bg-page;
+    }
+  }
+}
+.conteudo-sobre {
+  margin-bottom: 30px;
+  padding: 0 20px;
+  width: 100%;
+  .conteudo-sobre-titulo {
+    margin-bottom: 25px;
+    color: $verde;
+    font-weight: bold;
+
+    @include font-size(34);
+    @media (max-width: 830px) {
+      @include font-size(27);
+    }
+  }
+  .conteudo-sobre-texto {
+    max-width: 650px;
+    color: $text-escuro;
+    line-height: 1.6em;
+    width: 100%;
+    margin: 0 auto;
+
+    @include font-size(14);
+    @media (max-width: 830px) {
+      @include font-size(11);
+    }
+  }
+}
+.container-video {
+  box-sizing: border-box;
+  max-width: 1100px;
+  width: 100%;
+  @media (max-width: 830px) {
+    padding: 0 20px;
+  }
+  img {
+    width: 100%;
+    max-width: 1152px;
+    @media(max-width: 1280px){
+      max-width: 345px;
+    }
+  }
+}
+.wrap-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 100%;
+  iframe {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+.download-sobre {
+  margin: 35px 0;
+  a {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

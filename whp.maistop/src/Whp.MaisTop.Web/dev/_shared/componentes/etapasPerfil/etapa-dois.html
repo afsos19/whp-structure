@@ -1,0 +1,45 @@
+<div class="formulario-item" data-form-etapa="2">
+  <div class="form-title">
+    <h2>Endereço</h2>
+    <p>Preencha todos os campos com (*)</p>
+  </div>
+  <div class="form-container">
+    <form class="form-wrap" data-etapa-nome="2 - Endereço">
+      <fieldset class="form-dados-pessoais" data-target-etapa="2">
+        <div>
+          <div class="campo-input"><label for="cep">CEP*:</label> <input type="text" id="cep" iscep data-formulario="CEP" /></div>
+          <div class="campo-input"><label for="endereco">Rua/Avenida/Travessa/Praça*:</label> <input type="text" id="endereco" data-formulario="Endereço"/></div>
+          <div class="campo-input">
+            <label for="numero">Número*:</label> <input type="text" id="numero" maxlength="6" data-formulario="Número"/>
+          </div>
+          <div class="campo-input">
+            <label for="complemento">Complemento*:</label>
+            <input type="text" id="complemento" maxlength="70" data-formulario="Complemento"/>
+          </div>
+          <div class="campo-input">
+            <label for="bairro">Bairro*:</label>
+            <input type="text" id="bairro" data-formulario="Bairro"/>
+          </div>
+          <div class="campo-input">
+            <label for="cidade">Cidade*:</label>
+            <input type="text" id="cidade" maxlength="70" data-formulario="Cidade"/>
+          </div>
+          <div class="campo-input">
+            <label for="uf">UF*:</label>
+            <input type="text" id="uf" minlength="2" maxlength="2" data-formulario="UF"/>
+          </div>
+          <div class="campo-input">
+            <label for="referencia">Ponto de referência*:</label>
+            <input type="text" id="referencia" maxlength="70" data-formulario="Ponto de Referência"/>
+          </div>
+          <div class="botoes-meu-perfil botoes-meu-perfil-endereco">
+            <!-- <button class="btn btn-laranja" id="salvar-etapa-02" type="submit">Salvar</button> -->
+            <button class="btn btn-laranja" class="proxima-etapa" data-btn-etapa="1">Voltar</button>
+            <button class="btn btn-laranja" class="proxima-etapa" data-btn-etapa="3">Próximo</button>
+            <button class="btn btn-laranja" id="salvar-etapa-02">Salvar</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>

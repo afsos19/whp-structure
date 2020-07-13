@@ -1,0 +1,211 @@
+<div id="minha-equipe">
+  <main>
+    <div class="container main container-minha-equipe">
+      @@include('../componentes/user-sidebar.html')
+      <section class="wrap-minha-equipe">
+        <div class="conteudo-minha-equipe">
+          <div class="conteudo-minha-equipe-voltar">
+            @@include('../componentes/arrow-back.html')
+          </div>
+          <div class="conteudo-minha-equipe-topo">
+            <h2 class="conteudo-minha-equipe-titulo">Minha equipe</h2>
+            <div class="conteudo-minha-equipe-abas">
+              <button class="btn-equipe" data-aba-equipe="vendas">Vendas</button>
+              <button class="btn-equipe" data-aba-equipe="treinamentos">Treinamentos</button>
+              <button class="btn-equipe" data-aba-equipe="cadastro">Cadastro</button>
+              <!-- <button class="btn-equipe opactidade-btn">Visão Geral</button> -->
+            </div>
+          </div>
+          <div class="conteudo-minha-equipe-conteudo">
+            <div data-equipe-conteudo="cadastro">
+              <div class="conteudo-minha-equipe-graficos">
+                <div class="minha-equipe-graficos-item" data-grupo-equipe="ativos">
+                  <div class="minha-equipe-graficos-item-barra">
+                    <div style="width: 0%"></div>
+                  </div>
+                  <div class="minha-equipe-graficos-item-valor">
+                    <p class="minha-equipe-graficos-procentagem">0%</p>
+                    <p class="minha-equipe-graficos-grupo">Ativos</p>
+                  </div>
+                </div>
+                <div class="minha-equipe-graficos-item" data-grupo-equipe="pre-cadastro">
+                  <div class="minha-equipe-graficos-item-barra">
+                    <div style="width: 0%"></div>
+                  </div>
+                  <div class="minha-equipe-graficos-item-valor">
+                    <p class="minha-equipe-graficos-procentagem">0%</p>
+                    <p class="minha-equipe-graficos-grupo">Pré-cadastrados</p>
+                  </div>
+                </div>
+                <div class="minha-equipe-graficos-item" data-grupo-equipe="inativos">
+                  <div class="minha-equipe-graficos-item-barra">
+                    <div style="width: 0%"></div>
+                  </div>
+                  <div class="minha-equipe-graficos-item-valor">
+                    <p class="minha-equipe-graficos-procentagem">0%</p>
+                    <p class="minha-equipe-graficos-grupo">Inativos</p>
+                  </div>
+                </div>
+              </div>
+              <div class="minha-equipe-filtros-campos">
+                <div class="minha-equipe-filtros-campos-grupo">
+                  <div>
+                    <select class="minha-equipe-loja" id="minha-equipe-cadastro-loja">
+                      <!--  -->
+                    </select>
+                  </div>
+                  <div>
+                    <select class="minha-equipe-data mes" id="minha-equipe-cadastro-mes">
+                      <option value="01">Janeiro</option>
+                      <option value="02">Fevereiro</option>
+                      <option value="03">Março</option>
+                      <option value="04">Abril</option>
+                      <option value="05">Maio</option>
+                      <option value="06">Junho</option>
+                      <option value="07">Julho</option>
+                      <option value="08">Agosto</option>
+                      <option value="09">Setembro</option>
+                      <option value="10">Outubro</option>
+                      <option value="11">Novembro</option>
+                      <option value="12">Dezembro</option>
+                    </select>
+                  </div>
+                  <div>
+                    <select class="minha-equipe-data ano" id="minha-equipe-cadastro-ano">
+                      <!--  -->
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="minha-equipe-tabela">
+                <table id="datatable-cadastro"></table>
+                <div class="minha-equipe-tabela-tabela" id="tabela-cadastro-equipe"></div>
+              </div>
+            </div>
+            <!--  -->
+            <div data-equipe-conteudo="treinamentos">
+              <div class="conteudo-minha-equipe-graficos">
+                <div class="minha-equipe-graficos-item" data-grupo-equipe="um-treinamento">
+                  <div class="minha-equipe-graficos-item-barra">
+                    <div style="width: 0%"></div>
+                  </div>
+                  <div class="minha-equipe-graficos-item-valor">
+                    <p class="minha-equipe-graficos-procentagem">0%</p>
+                    <p class="minha-equipe-graficos-grupo">Realizaram<br />1 treinamento</p>
+                  </div>
+                </div>
+                <div class="minha-equipe-graficos-item" data-grupo-equipe="dois-treinamentos">
+                  <div class="minha-equipe-graficos-item-barra">
+                    <div style="width: 0%"></div>
+                  </div>
+                  <div class="minha-equipe-graficos-item-valor">
+                    <p class="minha-equipe-graficos-procentagem">0%</p>
+                    <p class="minha-equipe-graficos-grupo">Realizaram<br />2 treinamentos</p>
+                  </div>
+                </div>
+                <div class="minha-equipe-graficos-item" data-grupo-equipe="sem-treinamento">
+                  <div class="minha-equipe-graficos-item-barra">
+                    <div style="width: 0%"></div>
+                  </div>
+                  <div class="minha-equipe-graficos-item-valor">
+                    <p class="minha-equipe-graficos-procentagem">0%</p>
+                    <p class="minha-equipe-graficos-grupo">Não realizaram nenhum treinamento</p>
+                  </div>
+                </div>
+              </div>
+              <div class="minha-equipe-filtros-campos">
+                <div class="minha-equipe-filtros-campos-grupo">
+                  <div>
+                    <select class="minha-equipe-loja" id="minha-equipe-treinamentos-loja">
+                      <!--  -->
+                    </select>
+                  </div>
+                  <div>
+                    <select class="minha-equipe-data mes" id="minha-equipe-treinamentos-mes">
+                      <option value="01">Janeiro</option>
+                      <option value="02">Fevereiro</option>
+                      <option value="03">Março</option>
+                      <option value="04">Abril</option>
+                      <option value="05">Maio</option>
+                      <option value="06">Junho</option>
+                      <option value="07">Julho</option>
+                      <option value="08">Agosto</option>
+                      <option value="09">Setembro</option>
+                      <option value="10">Outubro</option>
+                      <option value="11">Novembro</option>
+                      <option value="12">Dezembro</option>
+                    </select>
+                  </div>
+                  <div>
+                    <select class="minha-equipe-data ano" id="minha-equipe-treinamentos-ano">
+                      <!--  -->
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="minha-equipe-tabela">
+                <table id="datatable-treinamentos"></table>
+                <div class="minha-equipe-tabela-tabela" id="tabela-treinamentos-equipe"></div>
+              </div>
+            </div>
+            <!--  -->
+            <div data-equipe-conteudo="vendas">
+              <div class="conteudo-minha-equipe-graficos">
+                <div class="minha-equipe-graficos-item" data-grupo-equipe="produtos-participantes">
+                  <div class="minha-equipe-graficos-item-barra">
+                    <div style="width: 0%"></div>
+                  </div>
+                  <div class="minha-equipe-graficos-item-valor">
+                    <p class="minha-equipe-graficos-procentagem">0%</p>
+                    <p class="minha-equipe-graficos-grupo">Produtos<br />participantes</p>
+                  </div>
+                </div>
+                <div class="minha-equipe-graficos-item" data-grupo-equipe="produtos-supertops">
+                  <div class="minha-equipe-graficos-item-barra">
+                    <div style="width: 0%"></div>
+                  </div>
+                  <div class="minha-equipe-graficos-item-valor">
+                    <p class="minha-equipe-graficos-procentagem">0%</p>
+                    <p class="minha-equipe-graficos-grupo">Produtos<br />Supertops</p>
+                  </div>
+                </div>
+              </div>
+              <div class="minha-equipe-filtros-campos">
+                <div class="minha-equipe-filtros-campos-grupo">
+                  <div>
+                    <select class="minha-equipe-loja" id="minha-equipe-vendas-loja">
+                      <!--  -->
+                    </select>
+                  </div>
+                  <div>
+                    <select class="minha-equipe-data mes" id="minha-equipe-vendas-mes">
+                      <option value="01">Janeiro</option>
+                      <option value="02">Fevereiro</option>
+                      <option value="03">Março</option>
+                      <option value="04">Abril</option>
+                      <option value="05">Maio</option>
+                      <option value="06">Junho</option>
+                      <option value="07">Julho</option>
+                      <option value="08">Agosto</option>
+                      <option value="09">Setembro</option>
+                      <option value="10">Outubro</option>
+                      <option value="11">Novembro</option>
+                      <option value="12">Dezembro</option>
+                    </select>
+                  </div>
+                  <div>
+                    <select class="minha-equipe-data ano" id="minha-equipe-vendas-ano"> </select>
+                  </div>
+                </div>
+              </div>
+              <div class="minha-equipe-tabela">
+                <table id="datatable-vendas"></table>
+                <div class="minha-equipe-tabela-tabela" id="tabela-vendas-equipe"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>

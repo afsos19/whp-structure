@@ -1,0 +1,96 @@
+.icon-heart {
+  position: relative;
+  display: inline-block;
+  width: 17px;
+  height: 13px;
+  &.active {
+    &:before,
+    &:after {
+      background: #f04f24;
+    }
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 10px;
+    height: 16px;
+    border-radius: 10px 10px 0 0;
+    background: $color-icon;
+    content: '';
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  &:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+  @media (max-width: 767px) {
+    width: 9px;
+    height: 12px;
+    &:before,
+    &:after {
+      top: 0;
+      left: 8px;
+      width: 9px;
+      height: 13px;
+      border-radius: 10px 10px 0 0;
+    }
+    &:after {
+      left: 0;
+    }
+  }
+}
+.arrow-back {
+  margin-bottom: 15px;
+  a {
+    position: relative;
+    color: $text-escuro;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+    @include font-size(12);
+    &:hover {
+      color: darken($text-escuro, 20%);
+      span,
+      span:before,
+      span:after {
+        background: darken($text-escuro, 20%);
+      }
+    }
+    span {
+      position: absolute;
+      top: 7px;
+      left: -25px;
+      width: 15px;
+      height: 1px;
+      background: $text-escuro;
+      transition: 0.3s;
+      &:before,
+      &:after {
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 8px;
+        height: 1px;
+        background: $text-escuro;
+        content: ' ';
+        transition: 0.3s;
+      }
+      &:before {
+        top: 3px;
+        transform: rotate(45deg);
+      }
+      &:after {
+        bottom: 3px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  @media (max-width: 1120px) {
+    display: none;
+  }
+}

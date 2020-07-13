@@ -1,0 +1,45 @@
+// ====================================================================
+// Primeiro Acesso
+// ====================================================================
+#primeiro-acesso {
+  .content-login-internas {
+    &:before {
+      right: 200%;
+      background-image: linear-gradient(to bottom, #96cd6d, #bad655);
+    }
+    &:after {
+      background-image: linear-gradient(to bottom, #fc7700, #fca900);
+    }
+  }
+  .personagem-login-internas {
+    @media (min-width: 891px) {
+      &:before {
+        width: 70%;
+        background: url('../img/login-internas/bg-login-interna.png');
+      }
+    }
+    @media (max-width: 1100px) and (min-width: 891px) {
+      width: calc(100% - 300px);
+    }
+  }
+  .personagem-login-internas-img {
+    left: -30%;
+    width: 120%;
+    background-image: url('../img/login-internas/personagem-mais-top-primeiro-acesso.png');
+    @media (max-width: 1100px) {
+      width: 110%;
+      height: 80%;
+    }
+    @media (max-width: 890px) {
+      left: 50%;
+      box-sizing: border-box;
+      min-height: 0;
+      width: 330px;
+      height: 100%;
+      transform: translateX(-50%);
+    }
+    @media (max-width: 374px) {
+      width: 300px;
+    }
+  }
+}

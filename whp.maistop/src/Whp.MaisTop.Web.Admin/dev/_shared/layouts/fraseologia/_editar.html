@@ -1,0 +1,66 @@
+<div class="page-wrapper cadastro-produto">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header"><strong>Fraseologia</strong> <span>- Editar</span></h1>
+    </div>
+  </div>
+  <form>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                Dados da fraseologia
+              </a>
+            </h4>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-12">
+                
+                <input type="hidden" id="fraseologiaEditHdId" />
+
+                <div class="form-group">
+                    <label>Categoria*</label>
+                    <select onchange="APP.controller.Phraseology.getSubjectsByCategory($('#fraseologiaCategoriaEdit option:selected').val(),'Edit')" id="fraseologiaCategoriaEdit" class="form-control" name="fraseologiaCategoriaEdit">
+                    </select>
+                  </div>
+
+                <div class="form-group">
+                  <label>Assunto*</label>
+                  <select onchange="APP.controller.Phraseology.getTypeSubjectBySubject($('#FraseologiaAssuntoEdit option:selected').val(),'Edit')" id="FraseologiaAssuntoEdit" class="form-control" name="FraseologiaAssuntoEdit">
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Tipo Assunto*</label>
+                  <select id="FraseologiaTipoAssuntoEdit" class="form-control" name="FraseologiaTipoAssuntoEdit">
+                  </select>
+                </div>
+
+                <br class="clear" />
+                
+                <div class="form-group">
+                    <label>Resposta* </label>
+                    <textarea required type="text" rows="3" class="form-control" id="fraseologiaRespostaEdit" resize="none" placeholder="Escreva aqui a resposta" name="fraseologiaRespostaEdit" rows="10" cols="100"></textarea>
+                  </div>
+
+                  <br class="clear" />
+
+                <div class="form-group" style="width: 50%;">
+                  <input type="button" onclick="{APP.controller.Phraseology.Update()}" id="btnSalvarfraseologia" class="btn btn-primary" value="Salvar" />
+                </div>
+              </div>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+    </div>
+  </form>
+  <!-- /.row -->
+</div>

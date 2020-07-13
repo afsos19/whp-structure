@@ -1,0 +1,118 @@
+<div class="page-wrapper cadastro-produto">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">
+        <strong>PRODUTO PARTICIPANTE</strong> <span>- Novo</span>
+      </h1>
+    </div>
+  </div>
+  <form>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a
+                data-toggle="collapse"
+                data-parent="#accordion"
+                href="#collapseOne"
+              >
+                Dados do Produto Participante
+              </a>
+            </h4>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Mes* </label>
+                  <input
+                    type="number"
+                    id="cadastraParticipantProductMonth"
+                    class="form-control"
+                    value=""
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Ano*</label>
+                  <input
+                    type="number"
+                    id="cadastraParticipantProductYear"
+                    class="form-control"
+                    value=""
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Pontuação*</label>
+                  <input
+                    type="number"
+                    id="cadastraParticipantProductPontuacao"
+                    class="form-control"
+                    value=""
+                  />
+                </div>
+
+                <br class="clear" />
+
+                <div class="form-group">
+                  <label>Rede</label>
+                  <select id="networkParticipantProduct" class="form-control"> </select>
+                </div>
+
+                <br class="clear" />
+
+                <div class="form-group">
+                  <label>Fornecedor</label>
+                  <select
+                    onchange="APP.controller.Sku.getProducts()"
+                    id="swalProducer"
+                    class="form-control"
+                  >
+                    <option value="0">SELECIONE</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Categoria</label>
+                  <select
+                    onchange="APP.controller.Sku.getProducts()"
+                    id="swalCategory"
+                    class="form-control"
+                  >
+                    <option value="0">SELECIONE</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Produto*</label>
+                  <select id="swalProduct" class="form-control">
+                    <option value="0">SELECIONE</option>
+                  </select>
+                </div>
+
+                <br class="clear" />
+
+                <div class="form-group" style="width: 50%;">
+                  <input
+                    type="button"
+                    onclick="{APP.controller.ParticipantProduct.saveParticipantProduct()}"
+                    id="btnSalvarCadatroProduto"
+                    class="btn btn-primary"
+                    value="Salvar"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+    </div>
+  </form>
+  <!-- /.row -->
+</div>

@@ -1,0 +1,164 @@
+// ====================================================================
+// Esqueceu Senha
+// ====================================================================
+#cadastro-convidado {
+  background: radial-gradient(at 80% 40%, #EDEDED, #9F9F9F);
+
+  @media (max-width: 890px) {
+    background: radial-gradient(at 80% 90%, #EDEDED, #9F9F9F);
+  }
+
+  .login-internas-container.senha-expirada {
+    @media (max-width: 890px) {
+      flex-direction: column;
+    }
+  }
+
+  .senha-expirada-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-logo-senha-expirada {
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+      max-width: 290px;
+      height: auto;
+    }
+
+    @media (max-width: 890px) {
+      max-width: 190px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .senha-expirada-titulo {
+    @include font-size(39);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+
+    @media (max-width: 890px) {
+      @include font-size(25);
+    }
+  }
+
+  .senha-expirada-descricao {
+    @include font-size(19);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 20px;
+
+    @media (max-width: 890px) {
+      @include font-size(12);
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 890px) {
+    .personagem-login-internas {
+
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .regra-senha-expirada {
+    @include font-size(12);
+    color: #fff;
+    line-height: 1.3em;
+  }
+
+  .personagem-login-internas-img {
+    left: -64%;
+    width: 288%;
+    background-image: url('../img/login-internas/personagem-mais-top-primeiro-acesso-2.png');
+
+    @media (max-width: 1100px) {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+    }
+
+    @media (max-width: 890px) {
+      background-position: top center;
+      background-size: cover;
+      left: 50%;
+      box-sizing: border-box;
+      min-height: 0;
+      width: 200px;
+      height: 100%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .content-login-internas {
+    z-index: 10;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .input-login-internas {
+    z-index: 10;
+    position: relative;
+    color: #fff;
+    border-bottom: 1px solid lighten($text-escuro, 100%);
+    text-transform: uppercase;
+
+    &:-webkit-autofill {
+      background: transparent;
+    }
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  .infor-login-internas {
+    color: #fff;
+    margin-bottom: 50px;
+    font-weight: 600;
+
+    a {
+      color: #fff;
+    }
+
+    span {
+      color: $cinza-dark;
+    }
+  }
+
+  .btns-login-internas {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .helper-box {
+    text-align: right;
+
+    >.text-helper {
+      font-size: 9px;
+      font-weight: 600;
+      color: $branco;
+    }
+  }
+
+  @media (max-width: 890px) {
+    .btns-login-internas {
+      justify-content: center;
+    }
+  }
+}

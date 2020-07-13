@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "337036105375",
+    "firebase_url": "https://mais-top.firebaseio.com",
+    "project_id": "mais-top",
+    "storage_bucket": "mais-top.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337036105375:android:00d1a1db66098450",
+        "android_client_info": {
+          "package_name": "com.fullbar.maistop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337036105375-sml2o23faqlbndfrninhjrjahdhacu9e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fullbar.maistop",
+            "certificate_hash": "bbe2c19b8f40aa711e5088391b07fbdac367f340"
+          }
+        },
+        {
+          "client_id": "337036105375-8gk7jintqvo59pbp2l00brfn58kcnshi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCImqwrP165nQxMhmpQ0aCV9rBU-uJEpVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337036105375-8gk7jintqvo59pbp2l00brfn58kcnshi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "337036105375-n187attcfcjhto8h02ki9iqfjk4gpccp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fullbar.maistop",
+                "app_store_id": "1252047794"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,84 @@
+<div class="formulario-item active" data-form-etapa="1">
+  <div class="form-title form-title-principal">
+    <h2>Dados cadastrais</h2>
+    <p>Preencha todos os campos com (*)</p>
+  </div>
+  <div class="form-container">
+    <form class="form-wrap" data-etapa-nome="1 - Dados Cadastrais">
+      <fieldset class="form-subir-imagem">
+        <div class="form-imagem-container">
+          <img id="foto-usuario-cadastro" class="preview-img" src="/_assets/img/usuario/img-default.jpg" alt="Foto perfil" data-formulario="Foto Perfil" />
+        </div>
+        <div>
+          <label for="foto-perfil" class="label-btn-foto">Carregar foto</label>
+          <input id="foto-perfil" type="file" accept="image/png, image/jpg, image/jpeg" />
+        </div>
+        <div class="perfil-formatos-aceitos"><p>( Formatos aceitos .jpg .png) - 2mb</p></div>
+      </fieldset>
+      <fieldset class="form-dados-pessoais" data-target-etapa="1">
+        <div>
+          <div class="campo-input"><label for="rede">Rede:</label> <input type="text" disabled id="rede" data-formulario="Rede" /></div>
+          <div class="campo-input"><label for="loja">Loja:</label> <input type="text" disabled id="loja" data-formulario="Loja" /></div>
+          <div class="campo-input"><label for="cargo">Cargo:</label> <input type="text" disabled id="cargo" data-formulario="Cargo" /></div>
+          <div class="campo-input"><label for="nome">Nome:</label> <input type="text" disabled id="nome" data-formulario="Nome" /></div>
+          <div class="campo-input"><label for="email">E-mail*:</label> <input type="email" id="email" data-formulario="E-mail" /></div>
+          <div class="campo-input"><label for="conf-email">Confirmar e-mail*:</label> <input type="email" id="conf-email" data-formulario="Confirmar Email" /></div>
+          <div class="campo-input">
+            <label for="celular">Celular (com DDD)*:</label>
+            <input isphone type="tel" id="celular" minlength="15" data-formulario="Celular" />
+          </div>
+          <div class="campo-input">
+            <label for="telefone">Telefone (com DDD)*:</label>
+            <input istel type="tel" id="telefone" minlength="14" data-formulario="Telefone" />
+          </div>
+          <div class="campo-input">
+            <label for="data-nascimento">Data de Nascimento*:</label>
+            <input isdate type="tel" id="data-nascimento" minlength="10" data-formulario="Data de Nascimento" />
+          </div>
+          <div class="campo-input">
+            <label>Sexo*:</label>
+            <select id="sexo" data-formulario="Sexo">
+              <option value="" selected disabled hidden></option>
+              <option value="M">Masculino</option>
+              <option value="F">Feminino</option>
+            </select>
+          </div>
+          <div class="campo-input">
+            <label>Time do Coração:</label>
+            <select id="time-coracao" data-formulario="Time do Coração">
+              <!-- inclui os options com os times -->
+              @@include('../../../_shared/componentes/selectTimeDoCoracao.html')
+            </select>
+          </div>
+          <div class="campo-input">
+            <label>Filhos*:</label>
+            <select id="filhos" data-formulario="Filhos">
+              <option value="" selected disabled hidden></option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6 ou mais</option>
+            </select>
+          </div>
+          <div class="campo-input">
+            <label>Estado Civil*:</label>
+            <select id="estado-civil" data-formulario="Estado Civil">
+              <option value="" selected disabled hidden></option>
+              <option value="S">Solteiro(a)</option>
+              <option value="C">Casado(a)</option>
+              <option value="D">Divorciado(a)</option>
+              <option value="V">Viúvo(a)</option>
+            </select>
+          </div>
+          <div class="botoes-meu-perfil">
+            <button class="btn btn-laranja" class="proxima-etapa" data-btn-etapa="2">Próximo</button>
+            <button class="btn btn-laranja" id="salvar-etapa-01">Salvar</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>

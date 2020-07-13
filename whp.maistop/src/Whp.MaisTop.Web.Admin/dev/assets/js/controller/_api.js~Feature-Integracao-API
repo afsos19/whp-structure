@@ -1,0 +1,36 @@
+/*
+|--------------------------------------------------------------------------
+| Controller
+|--------------------------------------------------------------------------
+*/
+
+APP.controller.Api = {
+  init() {
+    this.setup();
+  },
+
+  setup() { },
+
+  pathApi() {
+
+    //local
+
+    //const path = 'http://localhost:56218'
+
+    //dev
+
+    const path = 'http://motoristadeztaque.homologa.fzcomdigital.com.br/api'
+    
+
+    const paths = {
+      retornoUnidade: `${path}/Cadastra/GetAllUnidade`,
+      retornoTransportadora: `${path}/Cadastra/GetAllTransportadora`,      
+      envioCadastro: `${path}/Cadastra`,
+      getMotorista: `${path}/Motorista`
+    }
+
+    return paths
+
+  }
+
+};

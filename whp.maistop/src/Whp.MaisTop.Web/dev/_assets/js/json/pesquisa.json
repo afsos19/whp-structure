@@ -1,0 +1,911 @@
+{
+  "textoIntro": "Por isso, convidamos você a responder uma rápida pesquisa, que vai nos ajudar bastante. Vamos lá?",
+  "imagem": "./_assets/js/json/modal-pesquisa.png",
+  "question": [
+    {
+      "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+      "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+      "description": "1) O quanto se identifica com a frase: Minha prioridade é garantir o futuro dos meus filhos.",
+      "image": "",
+      "id": 11
+    },
+    {
+      "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+      "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+      "description": "2) O quanto se identifica com a frase: Eu tenho muita vontade de voltar a estudar.",
+      "image": "",
+      "id": 12
+    },
+    {
+      "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+      "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+      "description": "3) O quanto se identifica com a frase: Quero aprender mais, me aperfeiçoar e me desenvolver na área de vendas.",
+      "image": "",
+      "id": 13
+    },
+    {
+      "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+      "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+      "description": "4) O quanto se identifica com a frase: Sinto falta de trocar experiência, dicas com outros vendedores.",
+      "image": "",
+      "id": 14
+    },
+    {
+      "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+      "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+      "description": "5) O quanto se identifica com a frase: Eu só consigo pagar algumas contas básicas porque ganho pontos de programas de incentivo de fabricantes.",
+      "image": "",
+      "id": 15
+    },
+    {
+      "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+      "questionQuizType": { "description": "DISCURSIVA", "id": 3 },
+      "description": "6) Qual sua idade?",
+      "image": "",
+      "id": 16
+    },
+    {
+      "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+      "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+      "description": "7) Você é...?",
+      "image": "",
+      "id": 17
+    },
+    {
+      "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+      "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+      "description": "8) Quantos filhos você tem?",
+      "image": "",
+      "id": 18
+    },
+    {
+      "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+      "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+      "description": "9) Há quanto tempo você trabalha com vendas?",
+      "image": "",
+      "id": 19
+    }
+  ],
+  "answer": [
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "1) O quanto se identifica com a frase: Minha prioridade é garantir o futuro dos meus filhos.",
+        "image": "",
+        "id": 11
+      },
+      "punctuation": 0,
+      "description": "0 - Não se identifica em nada",
+      "id": 2
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "1) O quanto se identifica com a frase: Minha prioridade é garantir o futuro dos meus filhos.",
+        "image": "",
+        "id": 11
+      },
+      "punctuation": 1,
+      "description": "1",
+      "id": 3
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "1) O quanto se identifica com a frase: Minha prioridade é garantir o futuro dos meus filhos.",
+        "image": "",
+        "id": 11
+      },
+      "punctuation": 2,
+      "description": "2",
+      "id": 4
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "1) O quanto se identifica com a frase: Minha prioridade é garantir o futuro dos meus filhos.",
+        "image": "",
+        "id": 11
+      },
+      "punctuation": 3,
+      "description": "3",
+      "id": 5
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "1) O quanto se identifica com a frase: Minha prioridade é garantir o futuro dos meus filhos.",
+        "image": "",
+        "id": 11
+      },
+      "punctuation": 4,
+      "description": "4",
+      "id": 6
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "1) O quanto se identifica com a frase: Minha prioridade é garantir o futuro dos meus filhos.",
+        "image": "",
+        "id": 11
+      },
+      "punctuation": 5,
+      "description": "5",
+      "id": 7
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "1) O quanto se identifica com a frase: Minha prioridade é garantir o futuro dos meus filhos.",
+        "image": "",
+        "id": 11
+      },
+      "punctuation": 6,
+      "description": "6",
+      "id": 8
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "1) O quanto se identifica com a frase: Minha prioridade é garantir o futuro dos meus filhos.",
+        "image": "",
+        "id": 11
+      },
+      "punctuation": 7,
+      "description": "7",
+      "id": 9
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "1) O quanto se identifica com a frase: Minha prioridade é garantir o futuro dos meus filhos.",
+        "image": "",
+        "id": 11
+      },
+      "punctuation": 8,
+      "description": "8",
+      "id": 10
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "1) O quanto se identifica com a frase: Minha prioridade é garantir o futuro dos meus filhos.",
+        "image": "",
+        "id": 11
+      },
+      "punctuation": 9,
+      "description": "9",
+      "id": 11
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "1) O quanto se identifica com a frase: Minha prioridade é garantir o futuro dos meus filhos.",
+        "image": "",
+        "id": 11
+      },
+      "punctuation": 10,
+      "description": "10 - Se identifica completamente",
+      "id": 12
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "2) O quanto se identifica com a frase: Eu tenho muita vontade de voltar a estudar.",
+        "image": "",
+        "id": 12
+      },
+      "punctuation": 0,
+      "description": "0 - Não se identifica em nada",
+      "id": 13
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "2) O quanto se identifica com a frase: Eu tenho muita vontade de voltar a estudar.",
+        "image": "",
+        "id": 12
+      },
+      "punctuation": 1,
+      "description": "1",
+      "id": 14
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "2) O quanto se identifica com a frase: Eu tenho muita vontade de voltar a estudar.",
+        "image": "",
+        "id": 12
+      },
+      "punctuation": 2,
+      "description": "2",
+      "id": 15
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "2) O quanto se identifica com a frase: Eu tenho muita vontade de voltar a estudar.",
+        "image": "",
+        "id": 12
+      },
+      "punctuation": 3,
+      "description": "3",
+      "id": 16
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "2) O quanto se identifica com a frase: Eu tenho muita vontade de voltar a estudar.",
+        "image": "",
+        "id": 12
+      },
+      "punctuation": 4,
+      "description": "4",
+      "id": 17
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "2) O quanto se identifica com a frase: Eu tenho muita vontade de voltar a estudar.",
+        "image": "",
+        "id": 12
+      },
+      "punctuation": 5,
+      "description": "5",
+      "id": 18
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "2) O quanto se identifica com a frase: Eu tenho muita vontade de voltar a estudar.",
+        "image": "",
+        "id": 12
+      },
+      "punctuation": 6,
+      "description": "6",
+      "id": 19
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "2) O quanto se identifica com a frase: Eu tenho muita vontade de voltar a estudar.",
+        "image": "",
+        "id": 12
+      },
+      "punctuation": 7,
+      "description": "7",
+      "id": 20
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "2) O quanto se identifica com a frase: Eu tenho muita vontade de voltar a estudar.",
+        "image": "",
+        "id": 12
+      },
+      "punctuation": 8,
+      "description": "8",
+      "id": 21
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "2) O quanto se identifica com a frase: Eu tenho muita vontade de voltar a estudar.",
+        "image": "",
+        "id": 12
+      },
+      "punctuation": 9,
+      "description": "9",
+      "id": 22
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "2) O quanto se identifica com a frase: Eu tenho muita vontade de voltar a estudar.",
+        "image": "",
+        "id": 12
+      },
+      "punctuation": 10,
+      "description": "10 - Se identifica completamente",
+      "id": 23
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "3) O quanto se identifica com a frase: Quero aprender mais, me aperfeiçoar e me desenvolver na área de vendas.",
+        "image": "",
+        "id": 13
+      },
+      "punctuation": 0,
+      "description": "0 - Não se identifica em nada",
+      "id": 24
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "3) O quanto se identifica com a frase: Quero aprender mais, me aperfeiçoar e me desenvolver na área de vendas.",
+        "image": "",
+        "id": 13
+      },
+      "punctuation": 1,
+      "description": "1",
+      "id": 25
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "3) O quanto se identifica com a frase: Quero aprender mais, me aperfeiçoar e me desenvolver na área de vendas.",
+        "image": "",
+        "id": 13
+      },
+      "punctuation": 2,
+      "description": "2",
+      "id": 26
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "3) O quanto se identifica com a frase: Quero aprender mais, me aperfeiçoar e me desenvolver na área de vendas.",
+        "image": "",
+        "id": 13
+      },
+      "punctuation": 3,
+      "description": "3",
+      "id": 27
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "3) O quanto se identifica com a frase: Quero aprender mais, me aperfeiçoar e me desenvolver na área de vendas.",
+        "image": "",
+        "id": 13
+      },
+      "punctuation": 4,
+      "description": "4",
+      "id": 28
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "3) O quanto se identifica com a frase: Quero aprender mais, me aperfeiçoar e me desenvolver na área de vendas.",
+        "image": "",
+        "id": 13
+      },
+      "punctuation": 5,
+      "description": "5",
+      "id": 29
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "3) O quanto se identifica com a frase: Quero aprender mais, me aperfeiçoar e me desenvolver na área de vendas.",
+        "image": "",
+        "id": 13
+      },
+      "punctuation": 6,
+      "description": "6",
+      "id": 30
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "3) O quanto se identifica com a frase: Quero aprender mais, me aperfeiçoar e me desenvolver na área de vendas.",
+        "image": "",
+        "id": 13
+      },
+      "punctuation": 7,
+      "description": "7",
+      "id": 31
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "3) O quanto se identifica com a frase: Quero aprender mais, me aperfeiçoar e me desenvolver na área de vendas.",
+        "image": "",
+        "id": 13
+      },
+      "punctuation": 8,
+      "description": "8",
+      "id": 32
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "3) O quanto se identifica com a frase: Quero aprender mais, me aperfeiçoar e me desenvolver na área de vendas.",
+        "image": "",
+        "id": 13
+      },
+      "punctuation": 9,
+      "description": "9",
+      "id": 33
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "3) O quanto se identifica com a frase: Quero aprender mais, me aperfeiçoar e me desenvolver na área de vendas.",
+        "image": "",
+        "id": 13
+      },
+      "punctuation": 10,
+      "description": "10 - Se identifica completamente",
+      "id": 34
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "4) O quanto se identifica com a frase: Sinto falta de trocar experiência, dicas com outros vendedores.",
+        "image": "",
+        "id": 14
+      },
+      "punctuation": 0,
+      "description": "0 - Não se identifica em nada",
+      "id": 35
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "4) O quanto se identifica com a frase: Sinto falta de trocar experiência, dicas com outros vendedores.",
+        "image": "",
+        "id": 14
+      },
+      "punctuation": 1,
+      "description": "1",
+      "id": 36
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "4) O quanto se identifica com a frase: Sinto falta de trocar experiência, dicas com outros vendedores.",
+        "image": "",
+        "id": 14
+      },
+      "punctuation": 2,
+      "description": "2",
+      "id": 37
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "4) O quanto se identifica com a frase: Sinto falta de trocar experiência, dicas com outros vendedores.",
+        "image": "",
+        "id": 14
+      },
+      "punctuation": 3,
+      "description": "3",
+      "id": 38
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "4) O quanto se identifica com a frase: Sinto falta de trocar experiência, dicas com outros vendedores.",
+        "image": "",
+        "id": 14
+      },
+      "punctuation": 4,
+      "description": "4",
+      "id": 39
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "4) O quanto se identifica com a frase: Sinto falta de trocar experiência, dicas com outros vendedores.",
+        "image": "",
+        "id": 14
+      },
+      "punctuation": 5,
+      "description": "5",
+      "id": 40
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "4) O quanto se identifica com a frase: Sinto falta de trocar experiência, dicas com outros vendedores.",
+        "image": "",
+        "id": 14
+      },
+      "punctuation": 6,
+      "description": "6",
+      "id": 41
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "4) O quanto se identifica com a frase: Sinto falta de trocar experiência, dicas com outros vendedores.",
+        "image": "",
+        "id": 14
+      },
+      "punctuation": 7,
+      "description": "7",
+      "id": 42
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "4) O quanto se identifica com a frase: Sinto falta de trocar experiência, dicas com outros vendedores.",
+        "image": "",
+        "id": 14
+      },
+      "punctuation": 8,
+      "description": "8",
+      "id": 43
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "4) O quanto se identifica com a frase: Sinto falta de trocar experiência, dicas com outros vendedores.",
+        "image": "",
+        "id": 14
+      },
+      "punctuation": 9,
+      "description": "9",
+      "id": 44
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "4) O quanto se identifica com a frase: Sinto falta de trocar experiência, dicas com outros vendedores.",
+        "image": "",
+        "id": 14
+      },
+      "punctuation": 10,
+      "description": "10 - Se identifica completamente",
+      "id": 45
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "5) O quanto se identifica com a frase: Eu só consigo pagar algumas contas básicas porque ganho pontos de programas de incentivo de fabricantes.",
+        "image": "",
+        "id": 15
+      },
+      "punctuation": 0,
+      "description": "0 - Não se identifica em nada",
+      "id": 46
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "5) O quanto se identifica com a frase: Eu só consigo pagar algumas contas básicas porque ganho pontos de programas de incentivo de fabricantes.",
+        "image": "",
+        "id": 15
+      },
+      "punctuation": 1,
+      "description": "1",
+      "id": 47
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "5) O quanto se identifica com a frase: Eu só consigo pagar algumas contas básicas porque ganho pontos de programas de incentivo de fabricantes.",
+        "image": "",
+        "id": 15
+      },
+      "punctuation": 2,
+      "description": "2",
+      "id": 48
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "5) O quanto se identifica com a frase: Eu só consigo pagar algumas contas básicas porque ganho pontos de programas de incentivo de fabricantes.",
+        "image": "",
+        "id": 15
+      },
+      "punctuation": 3,
+      "description": "3",
+      "id": 49
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "5) O quanto se identifica com a frase: Eu só consigo pagar algumas contas básicas porque ganho pontos de programas de incentivo de fabricantes.",
+        "image": "",
+        "id": 15
+      },
+      "punctuation": 4,
+      "description": "4",
+      "id": 50
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "5) O quanto se identifica com a frase: Eu só consigo pagar algumas contas básicas porque ganho pontos de programas de incentivo de fabricantes.",
+        "image": "",
+        "id": 15
+      },
+      "punctuation": 5,
+      "description": "5",
+      "id": 51
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "5) O quanto se identifica com a frase: Eu só consigo pagar algumas contas básicas porque ganho pontos de programas de incentivo de fabricantes.",
+        "image": "",
+        "id": 15
+      },
+      "punctuation": 6,
+      "description": "6",
+      "id": 52
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "5) O quanto se identifica com a frase: Eu só consigo pagar algumas contas básicas porque ganho pontos de programas de incentivo de fabricantes.",
+        "image": "",
+        "id": 15
+      },
+      "punctuation": 7,
+      "description": "7",
+      "id": 53
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "5) O quanto se identifica com a frase: Eu só consigo pagar algumas contas básicas porque ganho pontos de programas de incentivo de fabricantes.",
+        "image": "",
+        "id": 15
+      },
+      "punctuation": 8,
+      "description": "8",
+      "id": 54
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "5) O quanto se identifica com a frase: Eu só consigo pagar algumas contas básicas porque ganho pontos de programas de incentivo de fabricantes.",
+        "image": "",
+        "id": 15
+      },
+      "punctuation": 9,
+      "description": "9",
+      "id": 55
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "5) O quanto se identifica com a frase: Eu só consigo pagar algumas contas básicas porque ganho pontos de programas de incentivo de fabricantes.",
+        "image": "",
+        "id": 15
+      },
+      "punctuation": 10,
+      "description": "10 - Se identifica completamente",
+      "id": 56
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "DISCURSIVA", "id": 3 },
+        "description": "6) Qual sua idade?",
+        "image": "",
+        "id": 16
+      },
+      "punctuation": 1,
+      "description": "",
+      "id": 57
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "7) Você é...?",
+        "image": "",
+        "id": 17
+      },
+      "punctuation": 1,
+      "description": "Homem",
+      "id": 58
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "7) Você é...?",
+        "image": "",
+        "id": 17
+      },
+      "punctuation": 1,
+      "description": "Mulher",
+      "id": 59
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "7) Você é...?",
+        "image": "",
+        "id": 17
+      },
+      "punctuation": 1,
+      "description": "Prefiro não responder",
+      "id": 60
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "8) Quantos filhos você tem?",
+        "image": "",
+        "id": 18
+      },
+      "punctuation": 1,
+      "description": "Não tenho filhos",
+      "id": 61
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "8) Quantos filhos você tem?",
+        "image": "",
+        "id": 18
+      },
+      "punctuation": 1,
+      "description": "1",
+      "id": 62
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "8) Quantos filhos você tem?",
+        "image": "",
+        "id": 18
+      },
+      "punctuation": 1,
+      "description": "2",
+      "id": 63
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "8) Quantos filhos você tem?",
+        "image": "",
+        "id": 18
+      },
+      "punctuation": 1,
+      "description": "3",
+      "id": 64
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "8) Quantos filhos você tem?",
+        "image": "",
+        "id": 18
+      },
+      "punctuation": 1,
+      "description": "4",
+      "id": 65
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "8) Quantos filhos você tem?",
+        "image": "",
+        "id": 18
+      },
+      "punctuation": 1,
+      "description": "5 ou mais",
+      "id": 66
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "9) Há quanto tempo você trabalha com vendas?",
+        "image": "",
+        "id": 19
+      },
+      "punctuation": 1,
+      "description": "1 ano ou menos",
+      "id": 67
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "9) Há quanto tempo você trabalha com vendas?",
+        "image": "",
+        "id": 19
+      },
+      "punctuation": 1,
+      "description": "Mais de 1 ano até 5 anos",
+      "id": 68
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "9) Há quanto tempo você trabalha com vendas?",
+        "image": "",
+        "id": 19
+      },
+      "punctuation": 1,
+      "description": "Mais de 5 anos até 10 anos",
+      "id": 69
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "9) Há quanto tempo você trabalha com vendas?",
+        "image": "",
+        "id": 19
+      },
+      "punctuation": 1,
+      "description": "Mais de 10 até 20 anos",
+      "id": 70
+    },
+    {
+      "questionQuiz": {
+        "quiz": { "name": "PESQUISA OKNO", "createdAt": "2019-04-08T17:24:47.4266667", "activated": true, "image": "", "maxQuestionAmout": 10, "id": 1 },
+        "questionQuizType": { "description": "MULTIPLA ESCOLHA", "id": 1 },
+        "description": "9) Há quanto tempo você trabalha com vendas?",
+        "image": "",
+        "id": 19
+      },
+      "punctuation": 1,
+      "description": "Mais de 20 anos",
+      "id": 71
+    }
+  ]
+}

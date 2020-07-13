@@ -1,0 +1,263 @@
+// ====================================================================
+// Página fora do ar
+// ====================================================================
+#fora-do-ar {
+  width: 100%;
+  min-height: 100vh;
+  background: url('../img/pagina-fora-do-ar/bg-fora-do-ar.svg');
+  background-position: center;
+  background-size: cover;
+  padding: 30px 70px 0 70px;
+  box-sizing: border-box;
+  .arrow-back.back {
+    text-align: right;
+    position: relative;
+    top: -30px;
+  }
+  @media (max-width: 1400px) {
+    padding: 30px 100px 0 100px;
+  }
+  @media (max-width: 767px) {
+    padding: 30px 25px 0 25px;
+  }
+}
+.fora-do-ar-imagem-mobile {
+  display: none;
+  background: url(../img/pagina-fora-do-ar/pagina-fora-do-ar-tomastop.png);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  @media (max-width: 767px) {
+    width: 70%;
+    height: 40vh;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: -15%;
+    z-index: 10;
+  }
+}
+.container-fora-do-ar {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  @media (max-width: 767px) {
+    max-width: 480px;
+  }
+}
+.fora-do-ar-info {
+  width: 500px;
+  position: relative;
+  padding-right: 100px;
+  box-sizing: border-box;
+  @media (max-width: 1000px) {
+    padding-right: 0;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+.fora-do-ar-logo {
+  background: #fff;
+  box-shadow: 0 30px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 75px 15% 45px 15%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  img {
+    position: relative;
+    left: -2%;
+    width: 100%;
+    max-width: 300px;
+  }
+  @media (max-width: 1450px) {
+    padding: 50px 15% 30px 15%;
+    img {
+      max-width: 200px;
+    }
+  }
+  @media (max-width: 1450px) {
+    padding: 30px 15% 25px 15%;
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.fora-do-ar-texto {
+  background: #fff;
+  margin-bottom: 50px;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  color: $text-claro;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  &:before,
+  &:after {
+    content: ' ';
+    width: 20px;
+    height: 90%;
+    position: absolute;
+  }
+  &:before {
+    top: 10%;
+    left: -20px;
+    background: $laranja;
+  }
+  &:after {
+    bottom: 10%;
+    right: -20px;
+    background: $verde;
+  }
+  @media (max-width: 767px) {
+    padding: 30px 25px;
+    &:before,
+    &:after {
+      width: 13px;
+    }
+    &:before {
+      left: -13px;
+      height: 60%;
+    }
+    &:after {
+      right: -13px;
+      height: 60%;
+      bottom: auto;
+      top: 0;
+    }
+  }
+}
+.fora-do-ar-titulo {
+  h1 {
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 1450px) {
+    h1 {
+      font-size: 45px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 1380px) {
+    h1 {
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 19px;
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 22px;
+    }
+    h2 {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+}
+.fora-do-ar-sub {
+  padding: 30px 0;
+  border-top: 2px solid $cinza-claro;
+  border-bottom: 2px solid $cinza-claro;
+  p {
+    font-size: 22px;
+    width: 75%;
+    margin-bottom: 15px;
+    &:last-of-type {
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+  }
+  @media (max-width: 1450px) {
+    p {
+      width: 100%;
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 1380px) {
+    padding: 20px 0;
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 15px 0;
+    p {
+      margin-bottom: 0;
+      width: 90%;
+      &:last-of-type {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.fora-do-ar-rodape {
+  padding-top: 30px;
+  p {
+    font-size: 18px;
+    line-height: 1.4em;
+    font-weight: 600;
+    a {
+      color: $verde;
+      font-weight: 800;
+      text-decoration: none;
+      transition: color 0.3s;
+      white-space: nowrap;
+      &:hover {
+        color: darken($verde, 10%);
+      }
+    }
+  }
+  @media (max-width: 1450px) {
+    p {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 1380px) {
+    padding-top: 20px;
+    p {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 767px) {
+    padding-top: 15px;
+    p {
+      width: 100%;
+      max-width: 60%;
+      a {
+        display: block;
+        line-height: 3em;
+      }
+    }
+  }
+}
+//
+.fora-do-ar-imagem {
+  width: calc(100% - 500px);
+  min-height: calc(100vh - 30px);
+  background: url(../img/pagina-fora-do-ar/pagina-fora-do-ar-tomastop.png);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  @media (min-width: 768px) and (max-width: 1000px) {
+    display: none;
+  }
+}

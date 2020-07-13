@@ -1,0 +1,188 @@
+<div class="page-wrapper lista-ocorrencia">
+  <div class="row listasOcorrencia">
+    <div class="col-lg-12">
+      <h1 class="page-header">
+        <strong>SAC </strong> <span>- Listar Ocorrências</span>
+      </h1>
+    </div>
+  </div>
+  <div class="row listasOcorrencia">
+    <div class="col-lg-12">
+      <!-- FILTROS -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            Filtros
+          </h4>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-12">
+              
+              <div class="form-group">
+                <label>Interação Catálogo</label>
+                <select id="Iteration" class="form-control">
+                  <option value="0" selected="">Todos</option>
+                  <option value="1">Respondido</option>
+                  <option value="2">Direcionado</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Assunto</label>
+                <select id="subject" class="form-control">
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Meio Contato</label>
+                <select id="typeContact" class="form-control">
+                  <option value="0" selected="">Todos</option>
+                  <option value="1">Call Center</option>
+                  <option value="2">Portal</option>
+                  <option value="3">Email</option>
+                  <option value="3">Catalogo</option>
+                </select>
+              </div>
+
+              <br class="clear" />
+
+              <div class="form-group">
+                <label>Status</label>
+                <select id="status" class="form-control">
+                  <option value="0">Todos</option>
+                  <option selected value="1">Em aberto</option>
+                  <option value="2">Em Andamento</option>
+                  <option value="3">Fechado</option>
+                  <option value="4">Aguardando Participante</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Rede</label>
+                <select id="network" class="form-control"> </select>
+              </div>
+
+              <div class="form-group">
+                <label>Cargo</label>
+                <select id="office" class="form-control"> </select>
+              </div>
+
+              <div class="form-group">
+                <label>CPF Participante</label>
+                <input
+                  type="text"
+                  id="cpf"
+                  class="form-control"
+                  value=""
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-group">
+                <label>Nome</label>
+                <input type="text" id="name" class="form-control" value="" />
+              </div>
+
+              <div class="form-group">
+                <label>Data Abertura</label>
+                <input
+                  type="text"
+                  id="createdAt"
+                  isdate
+                  class="form-control"
+                  value=""
+                />
+              </div>
+
+              <div class="form-group">
+                <label>Data Fechamento</label>
+                <input
+                  type="text"
+                  id="closedAt"
+                  isdate
+                  class="form-control"
+                  value=""
+                />
+              </div>
+
+              <div class="form-group">
+                <label>Ocorrência</label>
+                <input
+                  type="text"
+                  id="code"
+                  class="form-control"
+                  value=""
+                />
+              </div>
+
+              <br class="clear" />
+
+              <label style="font-weight: bold;font-size:24;">Critico?</label>
+              <input
+              type="checkbox"
+              name="Critical"
+              required=""
+              id="Critical"
+              style="width:25px;height:25px;vertical-align: middle;"
+            />
+
+            <label style="font-weight: bold;font-size:24;">Catalogo?</label>
+            <input
+              type="checkbox"
+              name="Catalog"
+              id="Catalog"
+              required=""
+              style="width:25px;height:25px;vertical-align: middle;"
+            />
+
+            <label style="font-weight: bold;font-size:24;">Participante?</label>
+            <input
+              type="checkbox"
+              required=""
+              name="Participant"
+              id="Participant"
+              style="width:25px;height:25px;vertical-align: middle;"
+            />
+
+              <br class="clear" />
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <input
+                  type="button"
+                  id="btnFiltrarOcorrencia"
+                  class="btn btn-primary"
+                  value="Buscar"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIM FILTROS -->
+      <!-- DADOS -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            Listar Ocorrências
+          </h4>
+        </div>
+        <div class="panel-body">
+          <table class="table table-bordered" id="tabela-ocorrencia"></table>
+           <!--<div class="well">
+            <input
+              type="button"
+              id="btnExcel"
+              class="btn btn-default btn-lg btn-block"
+              value="Exportar para Excel"
+            />
+          </div>-->
+        </div>
+      </div>
+      <!-- FIM DADOS -->
+    </div>
+  </div>
+
+  @@include('./_detalheOcorrencia.html')
+</div>

@@ -1,0 +1,67 @@
+{
+    "name": "MaisTop",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "react-native start",
+        "test": "jest",
+        "lint": "eslint ."
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "axios-auth-refresh": "^1.0.7",
+        "formik": "^1.5.1",
+        "jwt-decode": "^2.2.0",
+        "moment": "^2.24.0",
+        "moment-timezone": "^0.5.23",
+        "react": "16.8.6",
+        "react-native": "0.60.0",
+        "react-native-auto-height-image": "^1.1.0",
+        "react-native-check-box": "^2.1.7",
+        "react-native-collapsible": "^1.4.0",
+        "react-native-document-picker": "^3.2.2",
+        "react-native-firebase": "^5.5.5",
+        "react-native-fs": "^2.13.3",
+        "react-native-gesture-handler": "^1.1.0",
+        "react-native-image-picker": "^1.0.1",
+        "react-native-linear-gradient": "^2.5.4",
+        "react-native-masked-text": "^1.11.1",
+        "react-native-modal-datetime-picker": "^6.1.0",
+        "react-native-picker-select": "^6.1.0",
+        "react-native-render-html": "^4.1.2",
+        "react-native-snap-carousel": "^3.7.5",
+        "react-native-svg": "^9.3.7",
+        "react-native-vector-icons": "^6.4.2",
+        "react-native-view-pdf": "^0.9.0",
+        "react-native-webview": "^5.12.1",
+        "react-navigation": "^3.5.1",
+        "react-redux": "^6.0.1",
+        "redux": "^4.0.1",
+        "redux-logger": "^3.0.6",
+        "redux-thunk": "^2.3.0",
+        "styled-components": "^4.2.0",
+        "victory-native": "^32.0.2",
+        "yup": "^0.27.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@babel/runtime": "^7.4.5",
+        "@react-native-community/eslint-config": "^0.0.5",
+        "babel-eslint": "^10.0.1",
+        "babel-jest": "^24.8.0",
+        "eslint": "^6.0.1",
+        "jest": "^24.8.0",
+        "jetifier": "^1.6.2",
+        "metro-react-native-babel-preset": "^0.54.1",
+        "prettier": "^1.16.4",
+        "react-test-renderer": "16.8.6"
+    },
+    "jest": {
+        "preset": "react-native"
+    },
+    "rnpm": {
+        "assets": [
+            "./src/res/fonts"
+        ]
+    }
+}

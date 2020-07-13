@@ -1,0 +1,329 @@
+// ====================================================================
+// Login
+// ====================================================================
+body.home-login:before {
+  display: none;
+}
+#login {
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100%;
+  background: #fff;
+  @media (max-width: 767px) {
+    min-height: calc(100vh - 55px);
+  }
+}
+.login-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-height: 850px;
+  padding: 0 50px;
+  max-width: 872px;
+  width: 96%;
+  height: 100vh;
+  @media (max-width: 1400px) {
+    min-height: 600px;
+  }
+  @media (max-width: 767px) {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    padding: 0;
+    min-height: 0;
+    width: 100%;
+  }
+}
+.personagem-login {
+  position: relative;
+  min-height: 600px;
+  width: calc(100% - 305px);
+  height: 100%;
+  @media (max-width: 767px) and (min-width: 501px) {
+    position: absolute;
+    width: calc(100vw - 300px);
+    right: 0;
+  }
+  @media (max-width: 500px) {
+    width: 0;
+  }
+  .personagem-login-img {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    z-index: 1;
+    width: 180%;
+    height: 100%;
+    background-image: url('../img/login/personagem-mais-top.png');
+    background-position: center top;
+    background-size: cover;
+    @media (max-width: 1400px) {
+      left: -20%;
+      width: 130%;
+    }
+    @media (max-width: 767px) and (min-width: 501px) {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      z-index: 3;
+      width: 100%;
+      height: calc(100% - 22%);
+      background-position: left top;
+    }
+    @media (max-width: 500px) {
+      top: auto;
+      bottom: 0;
+      left: -165px;
+      z-index: 3;
+      width: 220px;
+      height: calc(100% - 22%);
+      background-position: left top;
+    }
+    @media (max-width: 374px) {
+      left: -150px;
+      width: 180px;
+    }
+  }
+}
+.content-login {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 305px;
+  @media (max-width: 767px) {
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 200%;
+    z-index: 0;
+    width: 1920px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #fc7700, #fca900);
+    content: ' ';
+  }
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    z-index: 0;
+    width: 1920px;
+    height: 15vh;
+    background-image: linear-gradient(to bottom, #96cd6d, #bad655);
+    content: ' ';
+    @media (max-width: 1400px) {
+      height: 5vh;
+    }
+  }
+  @media (max-width: 767px) {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}
+.container-logo-login {
+  margin-bottom: 50px;
+  @media (max-width: 767px) {
+    align-self: center;
+    margin-bottom: 80px;
+    max-width: 180px;
+    width: 65%;
+    z-index: 5;
+    @media (max-width: 374px) {
+      margin-bottom: 30px;
+      width: 140px;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+.cointainer-campos-login {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 165px;
+  width: 100%;
+  @media (max-width: 767px) {
+    align-items: flex-start;
+    margin-bottom: 50px;
+    padding: 50px 90px 20px 30px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: none;
+    width: 85%;
+    @media (max-width: 374px) {
+      margin-bottom: 0;
+    }
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      border-radius: 0 10px 10px 0;
+      background-image: $gradiente-login-mobile;
+      content: ' ';
+    }
+  }
+  input {
+    box-sizing: border-box;
+    margin-bottom: 18px;
+    padding: 5px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lighten($text-escuro, 30%);
+    background: transparent;
+    color: $text-escuro;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    @include font-size(13);
+    &:-webkit-autofill {
+      box-shadow: 0 0 0 30px #fff inset;
+      -webkit-box-shadow: 0 0 0 30px #fff inset;
+      color: $text-escuro;
+      -webkit-text-fill-color: $text-escuro;
+    }
+    &::placeholder {
+      color: $text-escuro;
+      font-weight: 700;
+      text-transform: uppercase;
+      @include font-size(13);
+    }
+    @media (max-width: 767px) {
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      width: 90%;
+      max-width: 250px;
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+  .btn-login {
+    margin-bottom: 15px;
+    max-width: none;
+    box-sizing: border-box;
+    width: 85%;
+    @media (max-width: 767px) {
+      margin: 30px 0 10px 0;
+      max-width: 250px;
+    }
+  }
+  .login-esqueci-senha {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    color: $text-escuro;
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.3s;
+
+    @include font-size(15);
+    &:hover {
+      color: darken($text-escuro, 20%);
+    }
+    @media (max-width: 767px) {
+      position: absolute;
+      top: 125px;
+      left: 30px;
+      padding: 0;
+      width: auto;
+      color: #fff;
+
+      @include font-size(11);
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .login-primeiro-acesso {
+    margin-bottom: 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: $verde;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+
+    @include font-size(15);
+    &:hover {
+      color: darken($verde, 20%);
+    }
+    @media (max-width: 767px) {
+      padding: 10px 5px;
+      box-sizing: border-box;
+      max-width: 250px;
+      width: 85%;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      background: transparent;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: normal;
+      cursor: pointer;
+      transition: 0.3s;
+
+      @include font-size(10);
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .infor-login {
+    width: 100%;
+    color: $text-escuro;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4em;
+
+    @include font-size(15);
+    span {
+      color: $verde;
+      font-weight: bold;
+    }
+    a {
+      color: $text-escuro;
+    }
+    @media (max-width: 767px) {
+      @include font-size(13);
+      max-width: 165px;
+      span {
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+  .separacao-login {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 1px;
+    background: $text-escuro;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}

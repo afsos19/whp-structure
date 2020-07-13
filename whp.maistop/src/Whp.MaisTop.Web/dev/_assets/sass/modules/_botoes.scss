@@ -1,0 +1,73 @@
+.btn {
+  font-weight: 700;
+  width: 110px;
+  padding: 12px 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+  color: #fff;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  @include font-size(10);
+}
+
+.btn-desabilitado {
+  background: lighten($text-claro, 15%);
+  cursor: default;
+}
+
+.btn-reiniciar {
+  color: #707070;
+  background: #d9d5cd;
+  &:hover {
+    background: darken(#d9d5cd, 5%);
+  }
+}
+
+.btn-excluir {
+  background: $texto-cinza-claro;
+  &:hover {
+    background: darken($texto-cinza-claro, 5%);
+  }
+}
+
+.btn-download {
+  color: #8b8b8b;
+  background: #f2f2f2;
+  &:hover {
+    background: darken(#f2f2f2, 5%);
+  }
+}
+
+.btn-laranja {
+  background: $laranja;
+  &:hover {
+    background: darken($laranja, 5%);
+  }
+}
+
+.btn-verde {
+  background: $verde;
+  &:hover {
+    background: darken($verde, 5%);
+  }
+}
+.btn-verde-escuro {
+  background: $verde-escuro;
+  color: $cinza-dark;
+
+  &:hover {
+    background: darken($verde, 5%);
+  }
+}
+
+.btn-voltar {
+  background: $text-claro;
+  &:hover {
+    background: darken($text-claro, 5%);
+  }
+}

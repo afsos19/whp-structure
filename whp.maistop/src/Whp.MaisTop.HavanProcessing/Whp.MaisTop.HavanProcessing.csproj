@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ninject" Version="3.3.4" />
+    <PackageReference Include="NLog" Version="4.6.4" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.5.0" />
+    <PackageReference Include="NLog.Targets.Syslog" Version="5.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Whp.MaisTop.Business\Whp.MaisTop.Business.csproj" />
+    <ProjectReference Include="..\Whp.MaisTop.Data\Whp.MaisTop.Data.csproj" />
+  </ItemGroup>
+
+</Project>

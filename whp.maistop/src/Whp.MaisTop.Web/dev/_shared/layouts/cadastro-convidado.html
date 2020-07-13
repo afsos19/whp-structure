@@ -1,0 +1,52 @@
+<div id="cadastro-convidado">
+  <main>
+    <div class="login-internas-container senha-expirada">
+      <div class="content-login-internas">
+        <div class="senha-expirada-container">
+          <div class="container-logo-senha-expirada">
+            <img src="/_assets/img/logos/logo-mais-top-positivo.png" alt="Logotipo Mais Top - Brastemp Consul" />
+          </div>
+          <h2 class="senha-expirada-titulo">Bem-vindo(a)</h2>
+          <p class="senha-expirada-descricao">
+            Você recebeu um código de indicação, por favor preencha os campos abaixo e aguarde a
+            confirmação do seu
+            cadastro via SMS.
+          </p>
+        </div>
+        <form name="form-senha-expirada" id="form-senha-expirada" autocomplete="off">
+          <input id="cpf" class="input-login-internas" iscpf type="text" placeholder="CPF*"
+            onfocus="this.removeAttribute('readonly');" readonly />
+
+          <input id="codigo" class="input-login-internas" type="text" placeholder="CÓDIGO DE INDICAÇÃO**"
+            onfocus="this.removeAttribute('readonly');" readonly />
+
+          <input isphone class="input-login-internas m-b-none" type="tel" id="celular" minlength="15"
+            data-formulario="Celular" placeholder="CELULAR*" onfocus="this.removeAttribute('readonly');" readonly />
+          <div class="helper-box">
+            <small class="text-helper">*Campos obrigatórios</small>
+          </div>
+          <div class="btns-login-internas">
+            <a class="btn btn-verde-escuro btn-login" id="btn-codigo">Enviar</a>
+          </div>
+
+        </form>
+
+        <!-- <form name="form-senha-expirada" id="form-senha-expirada">
+          <input id="senha" class="input-login-internas" type="password" placeholder="Nova Senha" required />
+          <input id="confirmacao-senha" class="input-login-internas" type="password" placeholder="Confirmar Nova Senha"
+            required /> <div class="btns-login-internas">
+            <button href="#!" type="submit" id="enviar btn-senha-expirada"
+              class="btn btn-laranja btn-login-internas-enviar btn-senha-expirada">Enviar</button> </div>
+        </form> -->
+
+        <p class="infor-login-internas">
+          <span>Dúvidas?</span> Ligue para <a href="tel:08007800606">0800 780 0606</a><br />e fale com um de nossos
+          atendentes.
+        </p>
+      </div>
+      <div class="personagem-login-internas">
+        <div class="personagem-login-internas-img"></div>
+      </div>
+    </div>
+  </main>
+</div>

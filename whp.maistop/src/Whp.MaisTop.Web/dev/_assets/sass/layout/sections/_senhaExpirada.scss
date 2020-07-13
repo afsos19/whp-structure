@@ -1,0 +1,212 @@
+// ====================================================================
+// Esqueceu Senha
+// ====================================================================
+#senha-expirada {
+  background: radial-gradient(at 80% 40%, #d9d5cd, #8d8980, #8d8980);
+
+  @media (max-width: 890px) {
+    background: radial-gradient(at 80% 90%, #d9d5cd, #8d8980, #8d8980);
+  }
+
+  .login-internas-container.senha-expirada {
+    @media (max-width: 890px) {
+      flex-direction: column;
+    }
+  }
+
+  .senha-expirada-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-logo-senha-expirada {
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+      max-width: 290px;
+      height: auto;
+    }
+
+    @media (max-width: 890px) {
+      max-width: 190px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .senha-expirada-titulo {
+    @include font-size(39);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+
+    @media (max-width: 890px) {
+      @include font-size(25);
+    }
+  }
+
+  .senha-expirada-descricao {
+    @include font-size(20);
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 40px;
+
+    @media (max-width: 890px) {
+      @include font-size(12);
+      margin-bottom: 20px;
+    }
+  }
+
+  .senha-expirada-subdescricao {
+    @include font-size(18);
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    span {
+      color: $verde-claro;
+      font-weight: bold;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    @media (max-width: 890px) {
+      @include font-size(12);
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 890px) {
+    .personagem-login-internas {
+
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .regra-senha-expirada {
+    @include font-size(12);
+    color: #fff;
+    line-height: 1.3em;
+  }
+
+  .personagem-login-internas-img {
+    left: 50px;
+    width: 100%;
+    background-image: url('../img/login-internas/personagem-mais-top-esqueceu-senha.png');
+
+    @media (max-width: 1100px) {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+    }
+
+    @media (max-width: 890px) {
+      background-position: top center;
+      background-size: cover;
+      left: 50%;
+      box-sizing: border-box;
+      min-height: 0;
+      width: 200px;
+      height: 100%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .content-login-internas:before {
+    display: none;
+  }
+
+  .input-login-internas {
+    color: #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  .infor-login-internas {
+    color: #fff;
+    margin-bottom: 50px;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 890px) {
+    .btns-login-internas {
+      justify-content: center;
+    }
+  }
+
+  .timer-content {
+    &.disabled {
+      .tempo-link {
+
+        .link,
+        #timer {
+          color: rgba(255, 255, 255, 0.6);
+          pointer-events: none;
+
+        }
+
+        &:hover {
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  .mensagem-sucesso {
+    display: none;
+
+    .tempo-link {
+      position: relative;
+      width: 100%;
+
+      .link {
+        text-decoration: none;
+        color: #8cc860;
+        font-weight: bold;
+        transition: 0.3s;
+        display: inline;
+        vertical-align: middle;
+        border: 0;
+        background: transparent;
+        padding: 0;
+        cursor: pointer;
+        @include font-size(15);
+
+        &:hover {
+          color: #fff;
+        }
+      }
+
+      #timer {
+        float: right;
+        @include font-size(13);
+        color: #8cc860;
+        font-weight: bold;
+        vertical-align: middle;
+        position: relative;
+        top: 4px;
+      }
+
+    }
+
+    .separacao {
+      background: #d5d4d1;
+    }
+  }
+}

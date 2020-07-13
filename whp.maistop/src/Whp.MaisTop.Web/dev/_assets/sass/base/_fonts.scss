@@ -1,0 +1,18 @@
+// -------------------------------------
+// OpenSans
+// -------------------------------------
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: normal;
+    font-style: normal;
+    src: url('#{$font-path}/opensans/OpenSans.eot');
+    src: url('#{$font-path}/opensans/OpenSans.eot') format('embedded-opentype'),
+        url('#{$font-path}/opensans/OpenSans.woff2') format('woff2'),
+        url('#{$font-path}/opensans/OpenSans.woff') format('woff'),
+        url('#{$font-path}/opensans/OpenSans.ttf') format('truetype'),
+        url('#{$font-path}/opensans/OpenSans.svg#OpenSans') format('svg');
+}
+// -------------------------------------
+// Padrao
+// -------------------------------------
+$fonte-padrao: 'OpenSans';

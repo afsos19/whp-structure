@@ -1,0 +1,98 @@
+<div id="extrato-de-pontos">
+  <main>
+    <div class="container main container-extrato">
+      @@include('../componentes/user-sidebar.html')
+      <section class="wrap-extrato">
+        <div class="container-title-page">
+          @@include('../componentes/arrow-back.html')
+        </div>
+        <div class="container-content-page extrato-on">
+          <h2 class="container-content-page-title">Extrato de pontos</h2>
+          <div class="flex-invert">
+            <div>
+              <div class="barra-superior-extrato">
+                <div class="barra-superior-extrato-btns">
+                  <nav>
+                    <button class="btn extrato active" data-extrato-target="extrato">Extrato</button>
+                    <button class="btn" data-extrato-target="creditos">Créditos</button>
+                    <button class="btn" data-extrato-target="vendas-realizadas">Vendas realizadas</button>
+                    <button class="btn" data-extrato-target="historico-de-resgates">Histórico de resgates</button>
+                  </nav>
+                </div>
+                <div class="barra-superior-extrato-data" style="display: none;">
+                  <div class="container-select-extrato">
+                    <select id="extrato-pontos-mes">
+                      <option value="01">Janeiro</option>
+                      <option value="02">Fevereiro</option>
+                      <option value="03">Março</option>
+                      <option value="04">Abril</option>
+                      <option value="05">Maio</option>
+                      <option value="06">Junho</option>
+                      <option value="07">Julho</option>
+                      <option value="08">Agosto</option>
+                      <option value="09">Setembro</option>
+                      <option value="10">Outubro</option>
+                      <option value="11">Novembro</option>
+                      <option value="12">Dezembro</option>
+                    </select>
+                  </div>
+                  <div class="container-select-extrato">
+                    <select id="extrato-pontos-ano">
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="extrato-pontos">
+                <!--  -->
+                <div class="extrato-pontos-tabs active" data-extrato="extrato">
+                  <div class="extrato-pontos-extrato">
+                    <div class="extrato-pontos-extrato-item">
+                      <p>Créditos totais:</p>
+                      <p id="creditos-totais"></p>
+                    </div>
+                    <div class="extrato-pontos-extrato-item">
+                      <p>Débitos totais:</p>
+                      <p id="debitos-totais"></p>
+                    </div>
+                    <div class="extrato-pontos-extrato-item">
+                      <p>Pontos expirados:</p>
+                      <p id="pontos-expirados"></p>
+                    </div>
+                    <div class="extrato-pontos-extrato-item pontos-expirar">
+                      <p>Pontos a expirar em <span id="data-pontos-a-expirar"></span>:</p>
+                      <p id="pontos-a-expirar"></p>
+                    </div>
+                    <div class="extrato-pontos-ultimo-credito">
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="extrato-pontos-tabs" data-extrato="creditos">
+                  <div class="extrato-pontos-extrato">
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+                <div class="extrato-pontos-tabs" data-extrato="vendas-realizadas">
+                  <div class="extrato-pontos-extrato">
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+                <div class="extrato-pontos-tabs" data-extrato="historico-de-resgates">
+                  <div class="extrato-pontos-extrato">
+                    <!--  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="extrato-total-de-pontos">
+              <p class="extrato-total-de-pontos-total">Total de pontos:</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>

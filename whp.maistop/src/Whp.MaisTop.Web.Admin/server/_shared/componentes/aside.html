@@ -1,0 +1,144 @@
+<!-- <aside class="sidebar-menu">
+    <h2>Hello</h2>
+</aside> -->
+
+<div class="navbar-default navbar-static-side" role="navigation">
+  <div class="sidebar-collapse">
+    <img src="/assets/img/logo.jpg" style="max-width:250px;" id="logo-admin" />
+    <ul class="nav" id="side-menu">
+      <li id="menu-usuario">
+        <a data-target="#submenu-user" href="#" data-toggle="collapse">
+          <i class="fa fa-user fa-fw"></i> Usuario
+        </a>
+        <ul ul id="submenu-user" class="nav nav-second-level collapse">
+          <li>
+            <a href="/Usuario/Listar"> Listar</a>
+          </li>
+          <li>
+            <a onclick="APP.controller.User.ExportUsersToExcel()"> Exporta base geral</a>
+          </li>
+        </ul>
+      </li>
+      <li id="menu-acesso-espelho">
+        <a data-target="#submenu-acesso-espelho" href="#" data-toggle="collapse">
+          <i class="fa fa-search-plus fa-fw"></i> Acesso Espelho
+        </a>
+        <ul ul id="submenu-acesso-espelho" class="nav nav-second-level collapse">
+          <li>
+            <a href="/AcessoEspelho"> Listar</a>
+          </li>
+        </ul>
+      </li>
+      <li id="menu-produto">
+        <a data-target="#submenu-product" href="#" data-toggle="collapse">
+          <i class="fa fa-archive fa-fw"></i> Produto
+        </a>
+        <ul ul id="submenu-product" class="nav nav-second-level collapse">
+          <li>
+            <a href="/Produto/Listar"> Cadastro</a>
+          </li>
+          <li>
+            <a href="/ProdutoSuperTop/Listar"> SuperTop</a>
+          </li>
+          <li>
+            <a href="/ProdutoParticipante/Listar"> Participante</a>
+          </li>
+        </ul>
+      </li>
+      <!--<li id="preProcessamento-menu">
+        <a data-target="#submenu-report" href="#" data-toggle="collapse">
+          <i class="fa fa-bars fa-fw"></i> Relatórios
+        </a>
+        <ul ul id="submenu-report" class="nav nav-second-level collapse">
+          <li>
+            <a href="/Relatorios/PreProcessamento"> Pré Processamento</a>
+          </li>
+          <li>
+            <a href="/Relatorios/AcompanhamentoBaseVenda"> Acompanhamento de Base Venda</a>
+          </li>
+          <li>
+            <a href="/Relatorios/AcompanhamentoBaseHierarquia"> Acompanhamento de Base Hierarquia</a>
+          </li>
+        </ul>
+      </li>-->
+      <li id="menu-processamento">
+        <a data-target="#submenu-processing" href="#" data-toggle="collapse">
+          <i class="fa fa-wrench fa-fw"></i> Processamento
+        </a>
+        <ul ul id="submenu-processing" class="nav nav-second-level collapse">
+          <li id="menu-classifica_sku">
+            <a href="/SkuClassificacao"> Classificação SKUs</a>
+          </li>
+          <li id="menu-pre-processamento">
+            <a href="/Relatorios/PreProcessamento"> Pré Processamento sku</a>
+          </li>
+          <li id="menu-pre-processamento-venda">
+            <a href="/Relatorios/PreProcessamentoVenda"> Pré Processamento venda</a>
+          </li>
+          <li id="menu-acompanhamento-base-venda">
+            <a href="/Relatorios/AcompanhamentoBaseVenda">
+              Acompanhamento de Base Venda</a
+            >
+          </li>
+          <li id="menu-acompanhamento-base-hierarquia">
+            <a href="/Relatorios/AcompanhamentoBaseHierarquia">
+              Acompanhamento de Base Hierarquia</a
+            >
+          </li>
+          <li id="menu-relatorio-treinamento-gerente">
+            <a href="/Relatorios/TreinamentoGerente">
+              Pontuação Treinamento Gerente</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li id="menu-fraseologia">
+        <a data-target="#submenu-fraseologia" href="#" data-toggle="collapse">
+          <i class="fa fa-edit fa-fw"></i> Fraseologia
+        </a>
+        <ul ul id="submenu-fraseologia" class="nav nav-second-level collapse">
+          <li>
+            <a href="/Fraseologia/Categoria/Listar">Categoria</a>
+          </li>
+          <li>
+            <a href="/Fraseologia/Assunto/Listar">Assunto</a>
+          </li>
+          <li>
+            <a href="/Fraseologia/TipoAssunto/Listar">Tipo Assunto</a>
+          </li>
+          <li>
+            <a href="/Fraseologia/Listar">Fraseologia</a>
+          </li>
+        </ul>
+      </li>
+      <li id="menu-sac">
+        <a data-target="#submenu-ocorrencia" href="#" data-toggle="collapse">
+          <i class="fa fa-question-circle fa-fw"></i> SAC
+        </a>
+        <ul ul id="submenu-ocorrencia" class="nav nav-second-level collapse">
+          <li>
+            <a href="/SAC/NovaOcorrencia">Nova Ocorrência</a>
+          </li>
+          <li>
+            <a href="/SAC/ListarOcorrencia">Listar Ocorrência</a>
+          </li>
+        </ul>
+      </li>
+      <li id="menu-sac-eai">
+        <a data-target="#submenu-ocorrencia-eai" href="#" data-toggle="collapse">
+          <i class="fa fa-question-circle fa-fw"></i> SAC
+        </a>
+        <ul ul id="submenu-ocorrencia-eai" class="nav nav-second-level collapse">
+          <li>
+            <a href="/SACEAI/ListarOcorrencia">Listar Ocorrência</a>
+          </li>
+          <li>
+            <a href="/SACEAI/NovaOcorrencia">Nova Ocorrência</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- /#side-menu -->
+  </div>
+  <!-- /.sidebar-collapse -->
+</div>

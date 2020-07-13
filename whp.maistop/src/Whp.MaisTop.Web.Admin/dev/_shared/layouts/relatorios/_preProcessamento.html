@@ -1,0 +1,115 @@
+<div class="page-wrapper lista-produto">
+    <div class="row listasproduto">
+      <div class="col-lg-12">
+        <h1 class="page-header">
+          <strong>RELATÓRIOS</strong> <span>- Pré Processamento de SKU</span>
+        </h1>
+      </div>
+    </div>
+    <div class="row listasproduto">
+        
+      <div class="col-lg-12">
+        <!-- DADOS -->
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              Filtros
+            </h4>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-12">
+  
+                <div class="form-group">
+                  <label>Mes</label>
+                  <input
+                    type="number"
+                    id="preProcessingMonth"
+                    class="form-control"
+                    value=""
+                  />
+                </div>
+  
+                <div class="form-group">
+                  <label>Ano</label>
+                  <input
+                    type="number"
+                    id="preProcessingYear"
+                    class="form-control"
+                    value=""
+                  />
+                </div>
+  
+                <br class="clear" />
+  
+                <div class="form-group">
+                  <label>Rede</label>
+                  <select id="preProcessingRede" class="form-control">
+                    <option value="0" >TODOS</option>
+                  </select>
+                </div>
+  
+                <br class="clear" />
+               
+              </div>
+  
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input
+                    type="button"
+                    id="btnFiltrarpreProcessing"
+                    class="btn btn-primary"
+                    onclick="{APP.controller.PreProcessing.setDataTable(true)}"
+                    value="Buscar"
+                  />
+                  <input
+                  type="button"
+                  id="btnFiltrarpreProcessing"
+                  class="btn btn-danger"
+                  onclick="{APP.controller.PreProcessing.Approve()}"
+                  value="Aprovar pre processamento"
+                />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div style="margin-top: 1cm" class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              Lista de produtos
+            </h4>
+          </div>
+          <div class="panel-body" >
+            <table class="table table-bordered" style="width: 600px" id="tabela-preProcessing">
+              <thead>
+                <tr>
+                  <th><b>REDE</b></th>
+                  <th><b>FABRICANTE CLASSIFICADO</b></th>
+                  <th><b>CATEGORIA CLASSIFICADO</b></th>
+                  <th><b>PRODUTO CLASSIFICADO</b></th>
+                  <th><b>PRODUTO SKU</b></th>
+                  <th><b>PARTICIPANTE</b></th>
+                  <th><b>SUPERTOP</b></th>
+                </tr>
+              </thead>
+              <tbody class="tbody-preProcessing">
+              </tbody>
+            </table>
+             <!--<div class="well">
+              <input
+                type="button"
+                id="btnExcel"
+                class="btn btn-default btn-lg btn-block"
+                value="Exportar para Excel"
+              />
+            </div>-->
+          </div>
+        </div>
+        <!-- FIM DADOS -->
+      </div>
+    </div>
+  
+  </div>
+  

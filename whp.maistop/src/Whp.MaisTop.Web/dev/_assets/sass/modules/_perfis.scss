@@ -1,0 +1,46 @@
+// body:not(.perfil-vendedor) {
+body {
+  .saldo-sidebar #resgate-sidebar-left,
+  .ranking-sidebar .saldo-ranking-title,
+  .ranking-sidebar .valor-ponto-ranking,
+  .ranking-sidebar #veja-mais-sidebar {
+    display: none;
+  }
+  .ranking-sidebar {
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+// body.perfil-vendedor #resgate-sidebar-right {
+//   display: none;
+// }
+body:not(.perfil-gi) {
+  #publicar-planilha,
+  [data-menu-header='PublicarPlanilhas'] {
+    display: none;
+  }
+}
+body.perfil-gi,
+body.perfil-vendedor {
+  [data-menu-header='MinhaEquipe'] {
+    display: none;
+  }
+}
+body.perfil-gr {
+  [data-menu-header='Treinamentos'] {
+    display: none;
+  }
+}
+body.perfil-gi {
+  [data-menu-header='ProdutosParticipantes'],
+  [data-menu-header='ConvideAmigos'],
+  [data-menu-header='Treinamentos'] {
+    display: none;
+  }
+}
+body.perfil-vendedor,
+body.perfil-gerente,
+body.perfil-gr,
+body.perfil-gi {
+  background: $bg-page;
+}

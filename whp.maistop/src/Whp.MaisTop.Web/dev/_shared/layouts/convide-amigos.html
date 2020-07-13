@@ -1,0 +1,113 @@
+<div id="convide-amigos">
+  <main>
+    <div class="container main container-convide-amigos">
+      <div class="flex-container-convide-amigos">
+        @@include('../componentes/user-sidebar.html')
+      </div>
+      <section class="convide-amigos">
+        <div class="convide-amigos-title active" data-convide-amigos="home">
+          <div class="convide-amigos-title-principal">
+            <h2>Convide amigos e ganhe.</h2>
+          </div>
+          <div class="convide-amigos-title-sub">
+            <p>São 10 pontos para quem indica e 5 pontos para quem também quer ser +TOP!</p>
+          </div>
+          <div class="convide-amigos-menu">
+            <div class="convide-amigos-menu-btn" id="btn-ver-regras">
+              <p>Conheça as Regras</p>
+            </div>
+            <div class="convide-amigos-menu-btn" data-convide-amigos-btn="progresso">
+              <img src="/_assets/img/convide-amigos/convide-amigos-icon.svg" />
+              <p>Meus amigos</p>
+            </div>
+          </div>
+          <div class="convide-amigos-info">
+            <div class="convide-amigos-info-item convide-amigos-instrucao">
+              <div class="convide-amigos-info-item-principal">
+                <p>
+                  Para indicar basta colocar o telefone com DDD de quem quiser indicar e clicar em enviar. Pronto! Seu
+                  amigo irá receber um SMS com o convite e o seu código para que você ganhe os
+                  pontos pela indicação.
+                </p>
+              </div>
+              <div class="convide-amigos-info-item-secundario">
+                <p>A indicação só será válida para amigos que foram indicados e ainda não fazem parte do programa.</p>
+              </div>
+            </div>
+            <div class="convide-amigos-info-item convide-amigos-celular">
+
+              <div class="enviar-solicitacao">
+                <div class="convide-amigos-info-item-principal">
+                  <p>Digite aqui o celular do seu amigo</p>
+                  <input class="celular-convite-sms" type="tel" isphone minlength="15" data-formulario="Celular"
+                    placeholder="(00) 99999-9999" />
+                  <button class="btn btn-laranja convide-amigos-enviar-sms">Enviar</button>
+                </div>
+              </div>
+              <div class="mensagem-sucesso">
+                <div class="convide-amigos-info-item-principal">
+                  <p>Seu convite foi enviado com sucesso via sms <br /> para o número
+                    <span class="phone"></span>.</p>
+                  <br />
+                  <p>Caso o convite não tenha sido recebido dentro de <br /> <span>5
+                    minutos</span>, tente
+                    novamente.</p>
+                  <div class="separacao"></div>
+                  <div class="tempo-link m-b-small">
+                    <button class="link">Reenviar código</button>
+                    <p id="timer"></p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="convide-amigos-info-item-secundario">
+                <p>Meu código:</p>
+                <span class="meu-codigo"></span>
+              </div>
+            </div>
+          </div>
+          <div class="convide-amigos-title-principal">
+            <h2>Prefere indicar por e-mail ou WhatsApp?</h2>
+          </div>
+          <div class="convide-amigos-title-sub convide-amigos-enviar-codigo">
+            <p>Copie o texto abaixo e envie via WhatsApp ou e-mail para seus amigos</p>
+          </div>
+          <div class="convide-amigos-copiar-codigo">
+            <p id="toClipboard">
+              Olá você foi indicado para fazer parte do <span class="text-bold">Programa +TOP</span>.<br />Para
+              participar basta clicar <span>neste link</span> e colocar o código no campo
+              <span class="text-bold">“Código”: <span class="meu-codigo"></span></span>
+            </p>
+          </div>
+          <div class="convide-amigos-btn-copiar-codigo">
+            <button class="btn btn-laranja convide-amigos-copiar-codigo-btn">Copiar</button>
+          </div>
+        </div>
+        <div data-convide-amigos="progresso">
+          @@include('../componentes/arrow-back.html')
+          <div class="convide-amigos-title-principal">
+            <h2>Progresso dos amigos indicados.</h2>
+          </div>
+          <div class="convide-amigos-title-sub convide-amigos-progresso">
+            <p>Abaixo você poderá acompanhar como anda o progresso de cada amigo indicado.<br />Caso tenha dúvidas,
+              entre em contato através do <span>FALE CONOSCO.</span></p>
+          </div>
+          <div class="convide-amigos-progresso-tabela">
+            <div class="convide-amigos-progresso-tabela-topo">
+              <p class="convide-amigos-progresso-itens-nome">Nome</p>
+              <p class="convide-amigos-progresso-itens-indicacao">Data da<br />indicação</p>
+              <p class="convide-amigos-progresso-itens-meio">Meio de indicação</p>
+              <p class="convide-amigos-progresso-itens-cadastro">Data de<br />cadastro</p>
+              <p class="convide-amigos-progresso-itens-credito">Credito de<br />pontos</p>
+            </div>
+            <div class="convide-amigos-progresso-tabela-conteudo">
+              <div class="convide-amigos-progresso-tabela-item">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>

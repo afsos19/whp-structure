@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>337036105375-n187attcfcjhto8h02ki9iqfjk4gpccp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.337036105375-n187attcfcjhto8h02ki9iqfjk4gpccp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAnOiXLGrKeD_eB57gQl9UBdKLMun5JX84</string>
+	<key>GCM_SENDER_ID</key>
+	<string>337036105375</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.fullbar.maistop</string>
+	<key>PROJECT_ID</key>
+	<string>mais-top</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mais-top.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:337036105375:ios:00d1a1db66098450</string>
+	<key>DATABASE_URL</key>
+	<string>https://mais-top.firebaseio.com</string>
+</dict>
+</plist>

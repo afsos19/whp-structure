@@ -1,0 +1,120 @@
+<div class="faq-home" data-faq="home">
+  <div class="faq-click-duvidas">
+    <div class="faq-click-duvidas-icon">
+      <img
+        src="/_assets/img/icones/faq-perguntas.svg"
+        alt="Dúvidas
+              frequentes sobre o programa +TOP "
+      />
+    </div>
+    <div class="faq-click-duvidas-texto">
+      <h3>Clique aqui</h3>
+      <p>E veja as dúvidas frequentes sobre o programa +Top</p>
+    </div>
+  </div>
+  <div class="faq-contato">
+    <div class="faq-contato-form active" data-form-contato="formulario">
+      <div class="container-faq-contato-form">
+        <div class="faq-contato-form-abrir-chamado">
+          <div class="faq-contato-form-abrir-chamado-texto">
+            <h2>Fale conosco</h2>
+            <p>Para abrir um novo chamado, selecione o assunto e escreva sua mensagem no formulário abaixo.</p>
+          </div>
+          <div class="faq-contato-form-abrir-chamado-botao">
+            <div class="faq-contato-form-abrir-chamado-icon-historico">
+              <img src="/_assets/img/icones/faq-abrir-chamado.svg" alt="Faq abrir chamado" />
+            </div>
+            <p>Histórico de chamadas</p>
+          </div>
+        </div>
+        <div class="faq-form-wrap-input faq-contato-form-assunto">
+          <label>Assunto</label>
+          <select name="assunto" id="assunto">
+            <option hidden value=""></option>
+            <option value="20">Acesso</option>
+            <option value="13">Regulamento</option>
+            <option value="1">Campanhas</option>
+            <option value="15">Pontuação</option>
+            <option value="17">Treinamentos</option>
+            <option value="22">Catálogo - Cartão pré-pago</option>
+            <option value="23">Catálogo - Produtos</option>
+            <option value="24">Catálogo - Recarga de celular</option>
+            <option value="25">Catálogo - Pagamento de contas</option>
+            <option value="26">Outros</option>
+          </select>
+        </div>
+        <div class="faq-form-wrap-input faq-contato-form-mensagem">
+          <label>Mensagem</label>
+          <textarea id="mensagem"></textarea>
+        </div>
+        <div class="faq-contato-form-enviar">
+          <div class="container-input-file">
+            <p id='input-file-name'>Arquivos aceitos: .png, .jpg e .jpeg</p>
+            <input id="arquivo" type="file" accept="image/png, image/jpg, image/jpeg" />
+            <label for="arquivo" id="label-input-file"></label>
+          </div>
+          <button class="btn btn-desabilitado">Enviar</button>
+        </div>
+      </div>
+    </div>
+    <div class="faq-contato-ocorrencias" data-form-contato="ocorrencias">
+      <div class="container-faq-contato-form">
+        <div class="faq-ocorrencias-topo">
+          @@include('../arrow-back.html')
+          <h2>Histórico de chamados</h2>
+          <div class="faq-ocorrencias-topo-tabs">
+            <button class="btn faq-ocorencias-topo-tabs-btn active" data-chamadas="andamento">
+              Chamadas em andamento
+            </button>
+            <button class="btn faq-ocorencias-topo-tabs-btn" data-chamadas="finalizadas">Chamadas finalizadas</button>
+          </div>
+        </div>
+        <div class="container-faq-lista">
+          <div class="container-faq-lista-chamadas active" data-chamadas-lista="andamento">
+            <div class="container-faq-lista-chamadas-list faq-lista-chamadas-topo">
+              <p class="abertura">Abertura</p>
+              <p class="chamado">Chamado</p>
+              <p class="assunto">Assunto</p>
+            </div>
+            <div class="container-faq-lista-chamadas-itens">
+              <!--  -->
+            </div>
+          </div>
+          <div class="container-faq-lista-chamadas" data-chamadas-lista="finalizadas">
+            <div class="container-faq-lista-chamadas-list faq-lista-chamadas-topo">
+              <p class="abertura">Abertura</p>
+              <p class="chamado">Chamado</p>
+              <p class="assunto">Assunto</p>
+            </div>
+            <div class="container-faq-lista-chamadas-itens">
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq-contato-mensagens" data-form-contato="mensagens">
+      <!--  -->
+      <div class="faq-mensagens-topo">
+        @@include('../arrow-back.html')
+        <h2>Chamado <span id="numero-chamado-mensagem"></span></h2>
+        <p class="status-chamado"></p>
+      </div>
+      <div class="historico-mensagem">
+        <div class="container-historico-mensagem">
+          <!--  -->
+        </div>
+      </div>
+      <div class="container-enviar-nova-mensagem">
+        <textarea id="nova-mensagem-faq"></textarea>
+        <div class="nova-mensagem-barra">
+          <span id="digite-aqui-mensagem">Digite aqui sua mensagem</span>
+          <p id='input-file-name-atualizacao'>Arquivos aceitos: .png, .jpg e .jpeg</p>
+          <input id="arquivo-anexo" type="file" accept="image/png, image/jpg, image/jpeg" />
+          <label class="icon-enviar-arquivo-anexo" for="arquivo-anexo"></label>
+          <button class="btn btn-desabilitado" id="enviar-mensagem" data-id-ocorrencia>Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

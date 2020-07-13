@@ -1,0 +1,108 @@
+<div class="page-wrapper lista-ocorrencia">
+  <div class="row listasOcorrencia">
+    <div class="col-lg-12">
+      <h1 class="page-header">
+        <strong>RELATÓRIOS </strong> <span>- Pontuação treinamento gerente</span>
+      </h1>
+    </div>
+  </div>
+  <div class="row listasOcorrencia">
+    <div class="col-lg-12">
+ <!-- FILTROS -->
+ <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      Filtros
+    </h4>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <div class="form-group">
+          <label>Mês</label>
+          <select id="trainingManagerReportMonth" class="form-control">
+            <option value="0" >Todos</option>
+              <option value="1" >Janeiro</option>
+              <option value="2" >Feveiro</option>
+              <option value="3" >Março</option>
+              <option value="4" >Abril</option>
+              <option value="5" >Maio</option>
+              <option value="6" >Junho</option>
+              <option value="7" >Julho</option>
+              <option value="8" >Agosto</option>
+              <option value="9" >Setembro</option>
+              <option value="10" >Outubro</option>
+              <option value="11" >Novembro</option>
+              <option value="12" >Dezembro</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Rede</label>
+          <select id="trainingManagerReportNetwork" class="form-control">
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>CPF Gerente</label>
+          <input
+            type="text"
+            id="trainingManagerReportCpf"
+            class="form-control"
+            value=""
+            autocomplete="off"
+          />
+        </div>
+     
+        <div class="form-group">
+          <label>Cnpj Loja</label>
+          <input
+            type="text"
+            id="trainingManagerReportCnpj"
+            class="form-control"
+            value=""
+            autocomplete="off"
+          />
+        </div>
+
+        <br class="clear" />
+      </div>
+
+      <div class="col-md-12">
+        <div class="form-group">
+          <input
+            type="button"
+            onclick="APP.controller.TrainingManagerReport.listaReport()"
+            class="btn btn-primary"
+            value="Buscar"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIM FILTROS -->
+      <!-- DADOS -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            Listar Ocorrências
+          </h4>
+        </div>
+        <div class="panel-body">
+          <table class="table table-bordered" id="tabela-treinamento-gerente"></table>
+           <!--<div class="well">
+            <input
+              type="button"
+              id="btnExcel"
+              class="btn btn-default btn-lg btn-block"
+              value="Exportar para Excel"
+            />
+          </div>-->
+        </div>
+      </div>
+      <!-- FIM DADOS -->
+    </div>
+  </div>
+</div>

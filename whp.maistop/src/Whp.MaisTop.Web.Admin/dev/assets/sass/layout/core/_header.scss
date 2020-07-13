@@ -1,0 +1,39 @@
+.navbar.navbar-default.navbar-default-blue {
+  color: #FFF;
+  background: #428BCA;
+  border-color: #428BCA;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  border-radius: 0;
+
+  .navbar-brand {
+    color: #fff;
+    font-size: 14px;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+.navbar-default.navbar-default-blue .navbar-nav > li > a {
+  color: #Fff;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.page-header span {
+  font-size: 24px;
+  color: #999;
+}

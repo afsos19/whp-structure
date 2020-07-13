@@ -1,0 +1,29 @@
+.sidebar-collapse {
+  position: fixed;
+  top: 50px;
+  width: 250px;
+  left: 0;
+
+}
+
+ul#side-menu {
+  height: calc(100vh - 156px - 63px);
+  overflow-y: auto;
+  border-right: 1px solid #e7e7e7;
+
+  li {
+    border-bottom: 1px solid #e7e7e7;
+    background: #f9f9f9
+  }
+
+  .nav-second-level {
+    li {
+      border-bottom: none;
+      
+      a {
+        padding-left: 35px;
+      }
+    }
+    
+  }
+}

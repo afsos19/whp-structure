@@ -1,0 +1,54 @@
+// -------------------------------------
+// BASE
+// -------------------------------------
+@import "base/_reset";
+@import "base/_mixins-variaveis";
+@import "base/_colors";
+// @import "base/_fonts";
+@import "base/_base";
+
+// -------------------------------------
+// GENERIC
+// -------------------------------------
+
+@import "generic/grid";
+@import "generic/settings";
+@import "generic/fonts";
+@import "generic/global";
+@import "generic/loading";
+
+// -------------------------------------
+// MODULES
+// -------------------------------------
+
+// @import "modules/bootstrap";
+@import "modules/_icons";
+@import "modules/buttons";
+@import "modules/_modal";
+@import "modules/_loading";
+@import "modules/_checkConnection";
+@import "modules/_userSidebar";
+
+// -------------------------------------
+// CORE
+// -------------------------------------
+@import "layout/core/_header";
+@import "layout/core/_footer";
+@import "layout/sections/index";
+@import "layout/sections/login";
+@import "layout/sections/cadastro";
+@import "layout/sections/relatorios";
+
+// -------------------------------------
+// OBJECTS
+// -------------------------------------
+
+@import "objects/page";
+@import "objects/carouselHome";
+@import "objects/headings";
+@import "objects/forms";
+@import "objects/inputs";
+
+// -------------------------------------
+// SECTIONS
+// -------------------------------------

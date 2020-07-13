@@ -1,0 +1,37 @@
+// ====================================================================
+// Colors
+// ====================================================================
+$branco: #ffffff;
+$bg-page: #f7f5f0;
+$bg-cinza: #f8f8f8;
+$bg-page-internas: #f2f2f2;
+$text-escuro: #8d8980;
+$text-claro: #a59d8c;
+$text-bege: #f5f2ec;
+$laranja: #f58420;
+$verde: #8cc860;
+$verde-claro: #bad655;
+$verde-escuro: #BAD655;
+$cinza-claro: #d9d5cd;
+$cinza-bg: #707070;
+$cinza-dark: #58595B;
+$texto-cinza-claro: #afafaf;
+$link-inativo: #d9d6d0;
+$color-icon: #afafaf;
+$color-error: #f04f24;
+$hover-header: rgba(245, 242, 236, 0.404);
+$separacao: lighten($text-claro, 30%);
+
+// ====================================================================
+// Gradientes
+// ====================================================================
+$gradiente-planilhas-btns-funcionarios: linear-gradient(to bottom, #fca900, #fc7700);
+$gradiente-planilhas-btns-vendas: linear-gradient(to bottom, #bad655, #96cd6d);
+$gradiente-header-top: linear-gradient(to bottom, #8d8980, #a29e96);
+$gradiente-header-links-home: linear-gradient(to bottom, #a29e96, #a29e96);
+$gradiente-erro-planilha: linear-gradient(to bottom, #d9d5cd, #8d8980);
+$gradiente-header-body: linear-gradient(to bottom, #a29e96 40%, #d9d5cd);
+$gradiente-login-mobile: linear-gradient(to bottom, #96928a, #d1cdc5);
+$gradiente-bg-mobile: linear-gradient(to top, #96928a, #d1cdc5);
+$gradiente-btn-login-voltar: linear-gradient(to bottom, #bad655, #96cd6d);
+$gradiente-cards-planilhas: linear-gradient(to bottom, #ffffff 0%, #fbfbfb 40%, #fafafa);
